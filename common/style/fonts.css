@@ -1424,3 +1424,89 @@
     U+201c-201d, U+2122, U+ac00, U+ace0, U+ae30, U+b2e4, U+b85c, U+b9ac, U+c0ac,
     U+c2a4, U+c2dc, U+c774, U+c778, U+c9c0, U+d558;
 }
+
+/* [92] */
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 200;
+  src: local("Gotham"),
+    url(../fonts/Gotham-Thin.woff) format("woff2-variations");
+}
+
+/* [93] */
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Gotham"),
+    url(../fonts/Gotham-Light.woff) format("woff2-variations");
+}
+
+/* [94] */
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gotham"),
+    url(../fonts/Gotham-Book.woff) format("woff2-variations");
+}
+
+/* [95] */
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Gotham"),
+    url(../fonts/Gotham-Medium.woff) format("woff2-variations");
+}
+
+/* [96] */
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Gotham"),
+    url(../fonts/Gotham-Bold.woff) format("woff2-variations");
+}
+
+/* [97] */
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Gotham"),
+    url(../fonts/Gotham-Black.woff) format("woff2-variations");
+}
+
+/* [98] */
+@font-face {
+  font-family: "NanumSquare";
+  font-weight: 400;
+  src: url(NanumSquareR.eot);
+  src: local("☺"), url(NanumSquareR.woff2) format("woff2");
+}
+
+/* [99] */
+@font-face {
+  font-family: "NanumSquare";
+  font-weight: 500;
+  src: url(NanumSquareB.eot);
+  src: local("☺"), url(NanumSquareB.woff2) format("woff2");
+}
+
+/* [100] */
+@font-face {
+  font-family: "NanumSquare";
+  font-weight: 600;
+  src: url(NanumSquareEB.eot);
+  src: local("☺"), url(NanumSquareEB.woff2) format("woff2");
+}
+
+/* [101] */
+@font-face {
+  font-family: "NanumSquare";
+  font-weight: 300;
+  src: url(NanumSquareL.eot);
+  src: local("☺"), url(NanumSquareL.woff2) format("woff2");
+}
