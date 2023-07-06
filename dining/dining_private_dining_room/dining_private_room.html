@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>dining_private_room</title>
+  <!----- reset ----->
+  <link rel="stylesheet" href="../../common/style/reset.css">
+  <!----- swiper css----->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <!----- fonts.css ----->
+  <link rel="stylesheet" href="../../common/style/fonts.css">
+  <!----- 공통 css ----->
+  <link rel="stylesheet" href="../../common/style/public.css">
+  <!----- 내가 쓴 css ----->
+  <link rel="stylesheet" href="./dining_private_room.css">
+  <!-- jQuery -->
+  <script src="../../common/js/jquery-3.7.0.min.js"></script>
+  <!----- swiper js----->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-----  공통 js ----->
+  <script defer src="../../common/js/public.js"></script>
+  <!----- 내가 쓴 js ----->
+  <script defer src="./dining_private_room.js"></script>
+</head>
+
+<body>
+  <!----- 첫번째 슬라이드 ----->
+  <section class="swiper1">
+    <!----- header ----->
+    <header>
+      <div class="header">
+        <!----- 예약버튼 ----->
+        <div class="reservation_btn">
+          <a href="#">+ RESERVATION</a>
+        </div>
+        <!----- 로고 ----->
+        <div class="logo">
+          <p>BAY HILL</p>
+          <p>POOL & VILLA</p>
+        </div>
+        <!----- 햄버거메뉴 ----->
+        <div class="hamburger_btn">
+          <label class="container">
+            <input type="checkbox" class="checkbox">
+            <div class="checkmark">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <ul class="menu">
+        <li><a href="#">ROOM</a></li>
+        <li><a href="#">DINING</a></li>
+        <li><a href="#">FACILITIES</a></li>
+        <li><a href="#">RESERVATION</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </header>
+
+    <div class="swiper mySwiper1">
+      <!----- 슬라이드 개별 이미지들 ----->
+      <div class="swiper-wrapper">
+        <div class="swiper-slide bg1">
+          <div class="swiper_txt">
+            <h1>프라이빗 다이닝룸</h1>
+            <p>나니아 3층에 위치한 프라이빗하게<br>
+              식사가 가능한 특별한 공간</p>
+            <!----- view more 버튼 ----->
+            <div class="swiper_txt_btn">
+              <a href="#">VIEW MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide bg2">
+
+          <div class="swiper_txt">
+            <h1>와인카브</h1>
+            <p>와인 저장고를 배경으로 분위기 있는 영상, 음악과 함께<br>
+              와인과 파인다이닝으로 어울어지는 로맨틱한 공간</p>
+            <!----- view more 버튼 ----->
+            <div class="swiper_txt_btn">
+              <a href="../dining_wine/dining_wine.html">VIEW MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide bg3">
+          <div class="swiper_txt">
+            <h1>나니아 레스토랑</h1>
+            <p>제주의 신선한 제철 식재료를 이용한<br>
+              유니크한 코스요리와 와인페어링</p>
+            <!----- view more 버튼 ----->
+            <div class="swiper_txt_btn">
+              <a href="../dining_restaurant/dining_restaurant.html">VIEW MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!----- 두번째 메인(슬라이드 두번째) 섹션 ----->
+  <section class="swiper2">
+    <div class="swiper2_wrapper">
+      <h1>프라이빗 다이닝룸</h1>
+      <!----- 두번째 슬라이드 대표 이미지들(큰 이미지) ----->
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/private_dining_room_slide1.jpg" alt="프라이빗 상세 이미지1">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/private_dining_room_slide2.jpg" alt="프라이빗 상세 이미지2">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/private_dining_room_slide3.jpg" alt="프라이빗 상세 이미지3">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/private_dining_room_slide4.jpg" alt=" 프라이빗 상세 이미지4">
+          </div>
+        </div>
+      </div>
+      <div thumbsSlider="" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/private_dining_room_slide1.jpg" alt="프라이빗 상세 이미지1">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/private_dining_room_slide2.jpg" alt="프라이빗 상세 이미지2">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/private_dining_room_slide3.jpg" alt="프라이빗 상세 이미지3">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/private_dining_room_slide4.jpg" alt=" 프라이빗 상세 이미지4">
+          </div>
+        </div>
+      </div>
+      <div class="swiper2_txt_wrapper">
+        <div class="swiper2_txt_wrapper_left">
+          <h1>나니아 3층에 위치한<br>
+            연인과 가족을 위한 프라이빗한 식사 공간</h1>
+          <p>
+            제주의 아름다운 석양을 바라보며<br>
+            사랑하는 가족, 친구, 연인과 잊지 못할 추억을 만드시길 바랍니다.
+          </p>
+          <div class="swiper2_txt_btn">
+            <span><a href="#">디너</a></span>
+            <span><a href="#">와인</a></span>
+          </div>
+        </div>
+        <div class="swiper2_txt_wrapper_right">
+          <h1>기본정보</h1>
+          <ul class="swiper2_txt_info">
+            <li><span>위치</span>나니아 3층 (4석/4석)</li>
+            <li><span>예약 및 문의</span>Tel. 064-801-9077 E-mail. reservations@bayhill.co.kr</li>
+            <li><span>운영시간</span>18:00~22:00</li>
+            <li><span>이용안내</span>
+              ※ 2인 이상의 나니아 디너 코스+ 와인 (Pairing OR Bottle)<br>
+              주문 시, 예약 가능 합니다.<br>
+              ※ 사전 예약을 통해 보다 더 편안한 서비스를 제공<br>
+              받으실 수있습니다.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!----- footer ----->
+  <footer>
+    <div class="footer">
+      <!----- footer logo ----->
+      <div class="footer_logo">
+        <p>BAYHILL<br>POOL & VILLA</p>
+      </div>
+      <!----- info ----->
+      <div class="footer_info">
+        <p>Tel. 064 - 801 - 9000</p>
+        <p>Fax. 064 - 801 - 9080</p>
+        <p>63538 제주특별자치도 서귀포시 예래로 424 (하예동 1888)</p>
+        <p>https://github.com/2023JAVAS/JAVAS_project.git</p>
+      </div>
+    </div>
+    <!----- copyright ----->
+    <div class="copyright">
+      <p>Copyright © 2023 <span class="bold">JAVAS PROJECT</span> All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

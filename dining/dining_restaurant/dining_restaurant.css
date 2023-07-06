@@ -1,0 +1,311 @@
+@charset "utf-8";
+
+body {
+  font-family: "NanumSquare", "맑은 고딕", "Malgun Gothic", 나눔고딕, 돋움,
+    Dotum, 굴림, Gulim, "Apple SD Gothic Neo", sans-serif;
+}
+
+/***** 첫번째 슬라이드 *****/
+.swiper1 .mySwiper1 {
+  background-color: #ddd;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+/***** 첫번째 슬라이드 하단 페이지네이션 (동그라미 버튼) *****/
+.swiper1 .swiper-pagination-bullet {
+  background: #fff;
+}
+
+.swiper1 .mySwiper1 .swiper-slide {
+  background: no-repeat 50% / cover;
+}
+
+/***** 첫번째 슬라이드 배경이미지들 *****/
+.swiper1 .mySwiper1 .bg1 {
+  background-image: url(./images/wine_bg.png);
+}
+
+.swiper1 .mySwiper1 .bg2 {
+  background-image: url(./images/res_bg.png);
+}
+
+.swiper1 .mySwiper1 .bg3 {
+  background-image: url(./images/private_bg.png);
+}
+
+/***** swiper_txt 배경 이미지 중간에 있는 투명 검정팝업창 *****/
+.swiper1 .mySwiper1 .swiper-wrapper .swiper-slide .swiper_txt {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  width: 46.354vw;
+  padding: 3vw 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/***** swiper_txt(투명 검정창) 안에 h1 타이틀 제목 *****/
+.swiper1 .mySwiper1 .swiper-wrapper .swiper-slide .swiper_txt h1 {
+  font-size: 1.667vw;
+  font-weight: 600;
+}
+
+/***** swiper_txt(투명 검정창) 안에 p 설명들 *****/
+.swiper1 .mySwiper1 .swiper-wrapper .swiper-slide .swiper_txt p {
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 0.938vw;
+  padding: 1.5vw 0;
+}
+
+/***** swiper_txt(투명 검정창) view more 버튼 *****/
+.swiper1 .mySwiper1 .swiper-wrapper .swiper-slide .swiper_txt_btn {
+  border: 1.5px solid #fff;
+  width: 6.979vw;
+  height: 1.927vw;
+  font-size: 0.833vw;
+  border-radius: 40px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.swiper1 .mySwiper1 .swiper-wrapper .swiper-slide .swiper_txt_btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.swiper1 .swiper-button-next:after,
+.swiper1 .swiper-button-prev:after {
+  color: #fff;
+}
+
+.swiper1 .swiper-button-next:after {
+  padding-right: 30px;
+}
+
+.swiper1 .swiper-button-prev:after {
+  padding-left: 30px;
+}
+/*****  두번째 슬라이드 섹션 *****/
+.swiper2 {
+  padding-top: 14.063vw;
+  padding-bottom: 15.625vw;
+}
+
+.swiper2 .swiper2_wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/*****  두번째 슬라이드 섹션 슬라이드 대제목 *****/
+.swiper2 .swiper2_wrapper > h1 {
+  font-size: 1.875vw;
+  text-align: center;
+  font-weight: 600;
+  color: #111;
+  position: relative;
+  margin-bottom: 12vw;
+}
+
+/*****  두번째 슬라이드 섹션 슬라이드 대제목 밑에 세로 선*****/
+.swiper2 .swiper2_wrapper > h1::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 7.552vw;
+  position: absolute;
+  bottom: -10vw;
+  left: 50%;
+  margin: 0 auto;
+  background-color: #676767;
+}
+
+/***** 두번째 슬라이드 대표이미지(큰 이미지) *****/
+.swiper2 .swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper2 .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper2 .mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.swiper2 .mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+/***** 두번째 슬라이드 작은 사진들 *****/
+.swiper2 .mySwiper .swiper-slide {
+  filter: brightness(50%);
+  width: 25%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/***** 두번째 슬라이드 작은 사진들 active 되었을 때(눌렀을 때) *****/
+.swiper2 .mySwiper .swiper-slide-thumb-active {
+  filter: none;
+}
+
+/***** 두번째 슬라이드 작은 사진들 높이 값*****/
+.swiper2 .mySwiper img {
+  display: block;
+  width: 100%;
+  height: 11.429vw;
+  object-fit: cover;
+}
+
+/***** 두번째 슬라이드 양쪽 txt박스들 wrapper ****/
+.swiper2 .swiper2_txt_wrapper {
+  margin-top: 7.813vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+/***** 두번째 슬라이드 양쪽 txt박스들 너비값 ****/
+.swiper2 .swiper2_txt_wrapper .swiper2_txt_wrapper_left,
+.swiper2 .swiper2_txt_wrapper .swiper2_txt_wrapper_right {
+  width: 45%;
+}
+
+/***** 왼쪽 txt 박스 h1 타이틀  ****/
+.swiper2 .swiper2_txt_wrapper .swiper2_txt_wrapper_left h1 {
+  color: #111;
+  font-weight: 600;
+  font-size: 1.875vw;
+}
+
+/***** 왼쪽 txt 박스 p 설명들 ****/
+.swiper2 .swiper2_txt_wrapper .swiper2_txt_wrapper_left p {
+  color: #222;
+  font-size: 1.042vw;
+  margin: 3vw 0;
+  line-height: 1.5;
+}
+
+/***** 왼쪽 txt 박스 버튼 디자인 ****/
+.swiper2 .swiper2_txt_wrapper .swiper2_txt_wrapper_left .swiper2_txt_btn {
+  font-size: 0.938vw;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.swiper2 .swiper2_txt_wrapper .swiper2_txt_wrapper_left .swiper2_txt_btn span {
+  width: 25%;
+  background-color: #000;
+  color: #fff;
+  height: 3vw;
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+
+.swiper2 .swiper2_txt_wrapper .swiper2_txt_wrapper_left .swiper2_txt_btn a {
+  display: block;
+}
+
+.swiper2
+  .swiper2_txt_wrapper
+  .swiper2_txt_wrapper_left
+  .swiper2_txt_btn
+  span:hover {
+  background: transparent;
+  color: #000;
+  box-shadow: -7px -7px 20px 0px #2221, -4px -4px 5px 0px #2221,
+    7px 7px 20px 0px #2221, 4px 4px 5px 0px #2221;
+}
+
+.swiper2
+  .swiper2_txt_wrapper
+  .swiper2_txt_wrapper_left
+  .swiper2_txt_btn
+  span:before,
+.swiper2
+  .swiper2_txt_wrapper
+  .swiper2_txt_wrapper_left
+  .swiper2_txt_btn
+  span:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background-color: #000;
+  transition: 400ms ease all;
+}
+
+.swiper2
+  .swiper2_txt_wrapper
+  .swiper2_txt_wrapper_left
+  .swiper2_txt_btn
+  span:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.swiper2
+  .swiper2_txt_wrapper
+  .swiper2_txt_wrapper_left
+  .swiper2_txt_btn
+  span:hover:before,
+.swiper2
+  .swiper2_txt_wrapper
+  .swiper2_txt_wrapper_left
+  .swiper2_txt_btn
+  span:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+/***** 오른쪽 txt 박스 h1 타이틀  ****/
+.swiper2 .swiper2_txt_wrapper .swiper2_txt_wrapper_right h1 {
+  color: #111;
+  font-weight: 600;
+  font-size: 1.563vw;
+  padding-bottom: 0.8vw;
+  border-bottom: 1px solid #595959;
+}
+
+/***** 오른쪽 txt 박스 li ****/
+.swiper2 .swiper2_txt_wrapper .swiper2_txt_wrapper_right .swiper2_txt_info li {
+  font-size: 0.9vw;
+  color: #333;
+  padding-top: 1vw;
+  display: flex;
+  line-height: 1.5;
+}
+
+/***** 오른쪽 txt 박스 li span ****/
+.swiper2
+  .swiper2_txt_wrapper
+  .swiper2_txt_wrapper_right
+  .swiper2_txt_info
+  li
+  span {
+  color: #222;
+  font-weight: bold;
+  font-size: 0.938vw;
+  display: inline-block;
+  width: 7.5vw;
+  display: block;
+}
