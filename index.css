@@ -1,0 +1,634 @@
+@charset "utf-8";
+
+:root {
+  --en-font: 'Gotham', serif;
+  --ko-font-pr: 'Pretendard Variable', '맑은고딕', sans-serif;
+  --ko-font-nn: 'NanumSquare', '맑은고딕', sans-serif;
+}
+body {
+  background-color: #000;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: var(--en-font);
+}
+
+/***** header *****/
+header {
+  color: #fff;
+  background-color: transparent;
+}
+
+.header {
+  padding: 1vh 0 1vh 0;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+/***** 메뉴 *****/
+.menu {
+  width: 100%;
+  height: 89vh;
+  padding: 9vh 0 0 5vw;
+  display: none;
+  background-color: #000;
+}
+
+.menu li {
+  margin: 1.5vw;
+  position: relative;
+}
+
+.menu a {
+  font-family: var(--ko-font-pr);
+  font-weight: 500;
+  font-size: 5rem;
+}
+
+/***** menu hover 효과 *****/
+.menu li:nth-child(1) a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 1px;
+  height: 2px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.4s;
+  opacity: 0;
+  background-color: #ffffff;
+}
+
+.menu li:nth-child(1) a:hover:after {
+  width: 30vw;
+  opacity: 1;
+}
+
+.menu li:nth-child(2) a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 1px;
+  height: 2px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.4s;
+  opacity: 0;
+  background-color: #ffffff;
+}
+.menu li:nth-child(2) a:hover:after {
+  width: 30vw;
+  opacity: 1;
+}
+
+.menu li:nth-child(3) a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 1px;
+  height: 2px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.4s;
+  opacity: 0;
+  background-color: #ffffff;
+}
+.menu li:nth-child(3) a:hover:after {
+  width: 30vw;
+  opacity: 1;
+}
+
+.menu li:nth-child(4) a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 1px;
+  height: 2px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.4s;
+  opacity: 0;
+  background-color: #ffffff;
+}
+.menu li:nth-child(4) a:hover:after {
+  width: 30vw;
+  opacity: 1;
+}
+
+.menu li:nth-child(5) a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 1px;
+  height: 2px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.4s;
+  opacity: 0;
+  background-color: #ffffff;
+}
+.menu li:nth-child(5) a:hover:after {
+  width: 30vw;
+  opacity: 1;
+}
+
+/***** 예약버튼 *****/
+.reservation_btn {
+  font-family: var(--en-font);
+  font-weight: 300;
+  text-align: center;
+  /* width: 8vw; */
+  height: 6vh;
+  line-height: 6vh;
+  margin: 6px 0 0 30px;
+  transition: 0.4s;
+}
+
+.reservation_btn:hover {
+  background-color: #b4b4b43a;
+  border-radius: 5px;
+}
+
+/***** 로고 *****/
+.logo {
+  font-family: var(--en-font);
+  font-weight: 200;
+  font-size: 3.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.logo p:nth-child(1) {
+  margin: 0;
+}
+
+.logo p:nth-child(2) {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.logo::before {
+  content: '';
+  position: absolute;
+  top: 35%;
+  left: -32vw;
+  width: 30vw;
+  height: 1px;
+  background-color: #fff;
+}
+
+.logo::after {
+  content: '';
+  position: absolute;
+  top: 35%;
+  left: 110%;
+  width: 32vw;
+  height: 1px;
+  background-color: #fff;
+}
+
+.logo.active::before {
+  background-color: #fff;
+}
+
+.logo.active::after {
+  background-color: #fff;
+}
+
+/***** 햄버거 메뉴*****/
+.hamburger_btn {
+  margin: 1.5vh 2vw;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+}
+
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1.3em;
+  width: 1.3em;
+}
+
+.checkmark span {
+  width: 32px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.checkmark span.active {
+  background-color: #fff;
+}
+
+.checkmark span:nth-child(1) {
+  top: 10%;
+}
+
+.checkmark span:nth-child(2) {
+  top: 50%;
+}
+
+.checkmark span:nth-child(3) {
+  top: 90%;
+}
+
+.container input:checked + .checkmark span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.container input:checked + .checkmark span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.container input:checked + .checkmark span:nth-child(3) {
+  transform: translateX(-50px);
+  transform: translateX(-50px);
+  transform: translateX(-50px);
+  transform: translateX(-50px);
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+/***** 메인 애니메이션 *****/
+.main_animation {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+  z-index: -999;
+  background: url(./images/main_bayhill.jpg) no-repeat 50% / contain;
+  background-size: 55%;
+}
+.main_animation .ani-title {
+  display: flex;
+
+  align-items: center;
+  white-space: nowrap;
+
+  position: absolute;
+  top: 50%;
+  overflow: hidden;
+}
+.main_animation .ani-title .ani-title_flow {
+  font-size: 6.25rem;
+  font-weight: 200;
+
+  z-index: 1;
+}
+.ani-title_flow {
+  animation: flow 10s linear infinite;
+}
+@keyframes flow {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+/***** 첫번째 애니메이션이 지나가는 뒷배경 사진 *****/
+/* .ani_img {
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.7;
+}
+.ani_img img {
+  width: 700px;
+  height: 100%;
+} */
+
+/***** 첫번째 사진 애니메이션 밑에 화살표  *****/
+.arrow {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/***** room_category 3개 섹션  *****/
+.room_category {
+  width: 100%;
+  height: 90vh;
+  margin: 0 auto;
+}
+.room_category h1 {
+  text-align: center;
+  font-size: 3.125rem;
+  font-weight: 700;
+  margin: 4.375rem 0;
+  padding-bottom: 3vw;
+  border-bottom: 1px solid #fff;
+}
+.room_category_3img .category_txt h3 {
+  font-size: 2.375rem;
+  font-weight: 700;
+}
+.room_category_3img {
+  padding-bottom: 5vw;
+  border-bottom: 1px solid #fff;
+
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+.room_category_3img .category_txt {
+  margin: 0 2vh;
+  width: 36.188rem;
+  height: 35.313rem;
+  font-size: 2.375rem;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.room_category_3img .category_txt .txt_hidden {
+  display: none;
+}
+
+.room_category_3img .castle {
+  background: url(./images/room_category_1.jpg) no-repeat 50% / cover,
+    rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+.room_category_3img .villa {
+  background: url(./images/room_category_2.jpg) no-repeat 50% / cover
+    rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+.room_category_3img .honeymoon {
+  background: url(./images/room_category_3.jpg) no-repeat 50% / cover,
+    rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+/***** room_category 3개 섹션 hover할 때 *****/
+.room_category_3img .category_txt:hover {
+  transition: 0.4s;
+  width: 50rem;
+}
+.room_category_3img .category_txt:hover {
+  filter: brightness(160%);
+}
+.room_category_3img .category_txt:hover h3 {
+  display: none;
+}
+.room_category_3img .category_txt:hover .txt_hidden {
+  display: block;
+  white-space: nowrap;
+}
+.room_category_3img .category_txt:hover .txt_hidden ul {
+  display: grid;
+}
+.room_category_3img .category_txt:hover .txt_hidden ul li {
+  margin: 10vh auto;
+}
+.room_category_3img .category_txt:hover .txt_hidden ul li:first-child {
+  font-size: 1.25rem;
+}
+.room_category_3img .category_txt:hover .txt_hidden ul li:last-child {
+  font-size: 0.875rem;
+  position: relative;
+}
+.room_category_3img .category_txt:hover .txt_hidden ul li:last-child::before {
+  content: '';
+  border: 1px solid #fff;
+  display: block;
+  width: 3vw;
+  position: absolute;
+  top: 50%;
+  right: 10vh;
+}
+.room_category_3img .category_txt:hover .txt_hidden ul li:nth-child(2) {
+  /*overflow: hidden; 사진안에서만 움직이게 하고싶어서 해봤으나 해결불가*/
+  content: '';
+  animation: flow 3s linear infinite;
+}
+@keyframes flow {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+/***** 메인 소개글과 사진  *****/
+.welcom {
+  width: 100%;
+  height: 100vh;
+  background-color: #eae8e1;
+  color: #000;
+  font-family: var(--en-font);
+  padding: 10vh;
+
+  position: relative;
+}
+.welcom .welcom_section {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcom .welcom_section h1 {
+  font-size: 2.5rem; /* 폰트 사이즈 좀 더 키워도 될 것 같아서 의견 물어보기 */
+  font-weight: 700;
+  margin-top: 15vh; /* 피그마 높이 따라 34vh 여백줬는데 너무 넓은 것 같아서 좀 줄여야 할것*/
+}
+.welcom .welcom_section h2 {
+  font-family: var(--ko-font-pr);
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-top: 20vh;
+  line-height: 1.4;
+}
+.welcom .welcom_section p {
+  font-family: var(--ko-font-pr);
+  font-size: 1.5rem;
+  margin-top: 3vh;
+  line-height: 1.4;
+}
+.welcom .welcom_section .welcom_btn {
+  margin-top: 6.5vh;
+  border: 1px solid #333;
+  border-radius: 6.25rem;
+  color: #333;
+  width: 10.438rem;
+  height: 2.938rem;
+  text-align: center;
+  line-height: 2.938rem;
+}
+.welcom_section .welcom_section_img img:nth-child(1) {
+  position: absolute;
+  top: 25%;
+  right: 20%;
+}
+.welcom_section .welcom_section_img img:nth-child(2) {
+  position: absolute;
+  top: 60%;
+  right: 7%;
+}
+
+/***** 스크롤시 위아래 반대로 글씨 지나가는 부분  *****/
+.ani_text {
+  width: 100%;
+  height: 50vh;
+  background-color: #eae8e1;
+  color: #000;
+  font-size: 5.625rem;
+  padding-top: 17vh;
+}
+
+/***** 양쪽으로 2장씩 사진 4개와 가운데 텍스트  *****/
+.sideimg_text {
+  width: 100%;
+  background-color: #eae8e1;
+  padding-bottom: 28vh;
+}
+.sideimg_text .sideimg_text_top {
+  width: 95%;
+  height: 80vh;
+  position: relative;
+}
+.sideimg_text .sideimg_text_top img:nth-child(1) {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+.sideimg_text .sideimg_text_top img:nth-child(2) {
+  position: absolute;
+  top: 45%;
+  right: 10%;
+  margin-bottom: 10vh;
+}
+.sideimg_text .sideimg_quote {
+  padding-top: 18vh;
+  color: #333;
+  font-family: var(--ko-font-nn);
+  font-size: 2.25rem;
+  text-align: center;
+
+  position: relative;
+}
+.sideimg_text .sideimg_quote p {
+  font-family: var(--ko-font-pr);
+  line-height: 1.4;
+}
+
+.sideimg_text .sideimg_quote svg {
+  width: 106px;
+  height: 87px;
+  opacity: 0.5;
+  position: absolute;
+  left: 30%;
+  top: 35%;
+}
+.sideimg_text .sideimg_text_bottom {
+  height: 100vh;
+  position: relative;
+}
+.sideimg_text .sideimg_text_bottom img:nth-child(1) {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+.sideimg_text .sideimg_text_bottom img:nth-child(2) {
+  width: 608px;
+  position: absolute;
+  top: 40%;
+  right: 10%;
+}
+
+/***** footer *****/
+footer {
+  height: 45vh;
+  font-family: var(--en-font);
+  background-color: #000;
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10vh 0 12vh 0;
+}
+
+/***** footer_logo *****/
+.footer_logo p {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+/***** footer_info *****/
+.footer_info {
+  font-family: var(--ko-font-nn);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.footer_info p {
+  margin: 12px;
+}
+
+/***** copyright *****/
+footer .copyright {
+  font-weight: 300;
+  margin-left: 12vw;
+  position: relative;
+}
+
+footer .copyright .bold {
+  font-weight: 500;
+}
+
+footer .copyright::before {
+  content: '';
+  width: 99.1vw;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: -4vh;
+  left: -12vw;
+}
