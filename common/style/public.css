@@ -1,0 +1,330 @@
+@charset "utf-8";
+
+body {
+  font-family: "NanumSquare", "맑은 고딕", "Malgun Gothic", 나눔고딕, 돋움,
+    Dotum, 굴림, Gulim, "Apple SD Gothic Neo", sans-serif;
+}
+/***** header *****/
+header {
+  color: #fff;
+  background-color: transparent;
+}
+
+.header {
+  padding: 1vh 0 1vh 0;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+}
+
+.header.active {
+  background-color: #000;
+  color: #fff;
+}
+
+/***** 메뉴 *****/
+.menu {
+  width: 100%;
+  height: 89vh;
+  padding: 9vh 0 0 5vw;
+  display: none;
+  background-color: #000;
+}
+
+.menu li {
+  margin: 1.5vw;
+  position: relative;
+}
+
+.menu a {
+  font-family: var(--ko-font-pr);
+  font-weight: 500;
+  font-size: 5rem;
+}
+
+/***** menu hover 효과 *****/
+.menu li:nth-child(1) a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 1px;
+  height: 2px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.4s;
+  opacity: 0;
+  background-color: #ffffff;
+}
+
+.menu li:nth-child(1) a:hover:after {
+  width: 30vw;
+  opacity: 1;
+}
+
+.menu li:nth-child(2) a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 1px;
+  height: 2px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.4s;
+  opacity: 0;
+  background-color: #ffffff;
+}
+.menu li:nth-child(2) a:hover:after {
+  width: 30vw;
+  opacity: 1;
+}
+
+.menu li:nth-child(3) a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 1px;
+  height: 2px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.4s;
+  opacity: 0;
+  background-color: #ffffff;
+}
+.menu li:nth-child(3) a:hover:after {
+  width: 30vw;
+  opacity: 1;
+}
+
+.menu li:nth-child(4) a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 1px;
+  height: 2px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.4s;
+  opacity: 0;
+  background-color: #ffffff;
+}
+.menu li:nth-child(4) a:hover:after {
+  width: 30vw;
+  opacity: 1;
+}
+
+.menu li:nth-child(5) a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 1px;
+  height: 2px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.4s;
+  opacity: 0;
+  background-color: #ffffff;
+}
+.menu li:nth-child(5) a:hover:after {
+  width: 30vw;
+  opacity: 1;
+}
+
+/***** 예약버튼 *****/
+.reservation_btn {
+  font-family: var(--en-font);
+  font-weight: 300;
+  text-align: center;
+  width: 8vw;
+  height: 6vh;
+  line-height: 6vh;
+  margin: 2px 0 0 2px;
+  transition: 0.4s;
+}
+
+.reservation_btn:hover {
+  background-color: #b4b4b43a;
+  border-radius: 5px;
+}
+
+/***** 로고 *****/
+.logo {
+  font-family: var(--en-font);
+  font-weight: 200;
+  font-size: 3.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.logo p:nth-child(1) {
+  margin: 0;
+}
+
+.logo p:nth-child(2) {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: -320%;
+  width: 313%;
+  height: 1px;
+  background-color: #000;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: 105%;
+  width: 320%;
+  height: 1px;
+  background-color: #000;
+}
+
+.logo.active::before {
+  background-color: #fff;
+}
+
+.logo.active::after {
+  background-color: #fff;
+}
+
+/***** 햄버거 메뉴*****/
+.hamburger_btn {
+  margin: 1.5vh 2vw;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+}
+
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1.3em;
+  width: 1.3em;
+}
+
+.checkmark span {
+  width: 32px;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.checkmark span.active {
+  background-color: #fff;
+}
+
+.checkmark span:nth-child(1) {
+  top: 10%;
+}
+
+.checkmark span:nth-child(2) {
+  top: 50%;
+}
+
+.checkmark span:nth-child(3) {
+  top: 90%;
+}
+
+.container input:checked + .checkmark span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.container input:checked + .checkmark span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.container input:checked + .checkmark span:nth-child(3) {
+  transform: translateX(-50px);
+  transform: translateX(-50px);
+  transform: translateX(-50px);
+  transform: translateX(-50px);
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+/***** footer *****/
+footer {
+  height: 45vh;
+  font-family: var(--en-font);
+  background-color: #000;
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10vh 0 12vh 0;
+}
+
+/***** footer_logo *****/
+.footer_logo p {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+/***** footer_info *****/
+.footer_info {
+  font-family: var(--ko-font-nn);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.footer_info p {
+  margin: 12px;
+}
+
+/***** copyright *****/
+footer .copyright {
+  font-weight: 300;
+  margin-left: 12vw;
+  position: relative;
+}
+
+footer .copyright .bold {
+  font-weight: 500;
+}
+
+footer .copyright::before {
+  content: "";
+  width: 99.1vw;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: -4vh;
+  left: -12vw;
+}
