@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>reservation</title>
+  <!----- reset ----->
+  <link rel="stylesheet" href="../common/style/reset.css">
+  <!--fonts -->
+  <link rel="stylesheet" href="../common/style/fonts.css">
+  <!----- 내가 쓴 css ----->
+  <link rel="stylesheet" href="../common/style/public.css">
+  <link rel="stylesheet" href="./reservation.css">
+  <!-- 공용 js -->
+  <script defer src="../common/js/public.js"></script>
+  <script src="../common/js/jquery-3.7.0.min.js"></script>
+  <!----- 외부 js ----->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <!----- 내가 쓴 js ----->
+  <script defer src="./reservation.js"></script>
+</head>
+
+<body>
+  <!----- header ----->
+  <header>
+    <div class="header">
+      <!----- 예약버튼 ----->
+      <div class="reservation_btn">
+        <a href="#">+ RESERVATION</a>
+      </div>
+      <!----- 로고 ----->
+      <div class="logo">
+        <p>BAY HILL</p>
+        <p>POOL & VILLA</p>
+      </div>
+      <!----- 햄버거메뉴 ----->
+      <div class="hamburger_btn">
+        <label class="container">
+          <input type="checkbox" class="checkbox">
+          <div class="checkmark">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <ul class="menu">
+      <li><a href="#">ROOM</a></li>
+      <li><a href="#">DINING</a></li>
+      <li><a href="#">FACILITIES</a></li>
+      <li><a href="#">RESERVATION</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+    <div class="reserv_text">
+      <h1>reservation</h1>
+      <h3>객실, 요금 선택</h3>
+    </div>
+    <!----- 객실, 요금 선택 ----->
+    <ul class="choose_room_rate">
+      <li class="room">
+        <strong>room</strong>
+        <div class="box">
+          <div class="selectBox2 ">
+            <button class="label">객실선택</button>
+            <ul class="optionList">
+              <li class="optionItem">더캐슬</li>
+              <li class="optionItem">오션빌라</li>
+              <li class="optionItem">퍼시픽빌라</li>
+              <li class="optionItem">허니문빌라</li>
+              <li class="optionItem">베이스위트빌라</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="checkin_out">
+        <strong>check in / out</strong>
+        <input type="text" name="daterange" value="" />
+      </li>
+      <li class="room">
+        <ul class="room_choose">
+          <li class="room_number grid">
+            <strong>room</strong>
+            <span>1</span>
+          </li>
+          <li class="adult grid">
+            <strong>adult</strong>
+            <span>2</span>
+          </li>
+          <li class="children grid">
+            <strong>children</strong>
+            <span>0</span>
+          </li>
+        </ul>
+      </li>
+      <li class="button">
+        <p>조회</p>
+      </li>
+    </ul>
+  </header>
+  <!----- 객실 안내 ----->
+  <section class="guest_room">
+    <div class="information">
+      <h3><strong>객실 안내</strong></h3>
+    </div>
+    <div class="empty">
+      <span>빈공간</span>
+    </div>
+    <div class="choose">
+      <!----- 더캐슬 ----->
+      <div class="all_room flex">
+        <img src="./images/더캐슬.png" alt="더캐슬빌라">
+        <div class="all_room_text">
+          <h1>더 캐슬</h1>
+          <h3>조식 3인 + 그랑조이 키즈케어 1인</h3>
+          <a href="#">자세히보기</a>
+        </div>
+        <div class="money">
+          <p>1,200,000원 ~</p>
+          <span>1박 / 세금별도</span>
+          <a href="#">reserv</a>
+        </div>
+      </div>
+      <!----- 오션빌라 ----->
+      <div class="all_room flex">
+        <img src="./images/오션빌라.png" alt="오션빌라">
+        <div class="all_room_text">
+          <h1>오션빌라</h1>
+          <h3>조식 2인 + 라운지앤바 스위트 아워</h3>
+          <a href="#">자세히보기</a>
+        </div>
+        <div class="money">
+          <p>900,000원 ~</p>
+          <span>1박 / 세금별도</span>
+          <a href="#">reserv</a>
+        </div>
+      </div>
+      <!----- 퍼시픽빌라 ----->
+      <div class="all_room flex">
+        <img src="./images/퍼시픽빌라.png" alt="퍼시픽빌라">
+        <div class="all_room_text">
+          <h1>퍼시픽빌라</h1>
+          <h3>힐 스위트 객실 + 커피 & 티 서비스</h3>
+          <a href="#">자세히보기</a>
+        </div>
+        <div class="money">
+          <p>700,000원 ~</p>
+          <span>1박 / 세금별도</span>
+          <a href="#">reserv</a>
+        </div>
+      </div>
+      <!----- 허니문빌라 ----->
+      <div class="all_room flex">
+        <img src="./images/허니문빌라.png" alt="허니문빌라">
+        <div class="all_room_text">
+          <h1>허니문 빌라</h1>
+          <h3>객실 1박 + 허니문 이벤트</h3>
+          <a href="#">자세히보기</a>
+        </div>
+        <div class="money txi">
+          <p>650,000원 ~</p>
+          <span>1박 / 세금별도</span>
+          <a href="#">reserv</a>
+        </div>
+      </div>
+      <!----- 베이스위트 ----->
+      <div class="all_room flex">
+        <img src="./images/베이스위트.png" alt="베이스위트빌라">
+        <div class="all_room_text">
+          <h1>베이스위트</h1>
+          <h3>조식 + 라운지앤바 수박빙수 1회</h3>
+          <a href="#">자세히보기</a>
+        </div>
+        <div class="money">
+          <p>500,000원 ~</p>
+          <span>1박 / 세금별도</span>
+          <a href="#">reserv</a>
+        </div>
+      </div>
+  </section>
+  <!----- 푸터 ----->
+  <footer>
+    <div class="footer">
+      <!----- footer logo ----->
+      <div class="footer_logo">
+        <p>BAYHILL<br>POOL & VILLA</p>
+      </div>
+      <!----- info ----->
+      <div class="footer_info">
+        <p>Tel. 064 - 801 - 9000</p>
+        <p>Fax. 064 - 801 - 9080</p>
+        <p>63538 제주특별자치도 서귀포시 예래로 424 (하예동 1888)</p>
+        <p>https://github.com/2023JAVAS/JAVAS_project.git</p>
+      </div>
+    </div>
+    <!----- copyright ----->
+    <div class="copyright">
+      <p>Copyright © 2023 <span class="bold">JAVAS PROJECT</span> All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</body>
+
+</html>
