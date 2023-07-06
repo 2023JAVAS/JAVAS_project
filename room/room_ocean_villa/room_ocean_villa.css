@@ -24,23 +24,23 @@ body {
 
 /***** 첫번째 슬라이드 배경이미지들 *****/
 .swiper1 .mySwiper1 .bg1 {
-  background-image: url(./images/the_castle_bg.jpg);
-}
-
-.swiper1 .mySwiper1 .bg2 {
   background-image: url(./images/ocean_bg.jpg);
 }
 
-.swiper1 .mySwiper1 .bg3 {
+.swiper1 .mySwiper1 .bg2 {
   background-image: url(./images/pacific_bg.jpg);
 }
 
-.swiper1 .mySwiper1 .bg4 {
+.swiper1 .mySwiper1 .bg3 {
   background-image: url(./images/honey_bg.jpg);
 }
 
-.swiper1 .mySwiper1 .bg5 {
+.swiper1 .mySwiper1 .bg4 {
   background-image: url(./images/bay_suite_bg.jpg);
+}
+
+.swiper1 .mySwiper1 .bg5 {
+  background-image: url(./images/the_castle_bg.jpg);
 }
 
 /***** swiper_txt 배경 이미지 중간에 있는 투명 검정팝업창 *****/
