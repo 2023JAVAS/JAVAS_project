@@ -1484,7 +1484,7 @@
   font-family: "NanumSquare";
   font-weight: 400;
   src: url(NanumSquareR.eot);
-  src: local("☺"), url(NanumSquareR.woff2) format("woff2");
+  src: local("☺"), url(NanumSquareR.woff2) format("font-woff2");
 }
 
 /* [99] */
@@ -1492,7 +1492,7 @@
   font-family: "NanumSquare";
   font-weight: 500;
   src: url(NanumSquareB.eot);
-  src: local("☺"), url(NanumSquareB.woff2) format("woff2");
+  src: local("☺"), url(NanumSquareB.woff2) format("font-woff2");
 }
 
 /* [100] */
@@ -1500,7 +1500,7 @@
   font-family: "NanumSquare";
   font-weight: 600;
   src: url(NanumSquareEB.eot);
-  src: local("☺"), url(NanumSquareEB.woff2) format("woff2");
+  src: local("☺"), url(NanumSquareEB.woff2) format("font-woff2");
 }
 
 /* [101] */
@@ -1508,5 +1508,5 @@
   font-family: "NanumSquare";
   font-weight: 300;
   src: url(NanumSquareL.eot);
-  src: local("☺"), url(NanumSquareL.woff2) format("woff2");
+  src: local("☺"), url(NanumSquareL.woff2) format("font-woff2");
 }
