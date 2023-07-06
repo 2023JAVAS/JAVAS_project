@@ -519,6 +519,11 @@ header {
   font-size: 5.625rem;
   padding-top: 17vh;
 }
+/***** 230706 좌우롤링을 위해 작성 아래*****/
+.ani_text .ani_bottom{
+  margin-left: -250px;
+}
+/***** 230706 좌우롤링을 위해 작성 위*****/
 
 /***** 양쪽으로 2장씩 사진 4개와 가운데 텍스트  *****/
 .sideimg_text {
