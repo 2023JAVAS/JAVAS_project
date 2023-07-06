@@ -33,7 +33,7 @@ const swiper2 = new Swiper(".mySwiper2", {
 // 객실 도면 팝업창
 function popup() {
   var url =
-    "https://2023javas.github.io/JAVAS_project/room/room_the_catsle/images/room_plan.jpg";
+    "https://2023javas.github.io/JAVAS_project/room/room_ocean_villa/images/room_plan.jpg";
   var name = "popup";
   var option =
     "width = 700, height = 800, top = 100, left = 600, location = no";

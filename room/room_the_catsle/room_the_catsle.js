@@ -35,7 +35,6 @@ function popup() {
   var url =
     "https://2023javas.github.io/JAVAS_project/room/room_the_catsle/images/room_plan.jpg";
   var name = "popup";
-  var option =
-    "width = 700, height = 800, top = 100, left = 600, location = no";
+  var option = "width = 700, height = 00, top = 100, left = 600, location = no";
   window.open(url, name, option);
 }
