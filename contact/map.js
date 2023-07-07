@@ -1,8 +1,15 @@
 // 오시는길 toggle
-$(".map-slide-menu h3").on("click", (e) => {
+$(".accordion_menu").on("click", (e) => {
   const target = $(e.target);
   target.next("p").slideToggle();
+  target.next(".bus").css({ display: "flex" });
   target.parent().siblings().find("p").slideUp();
+});
+
+// 화살표 toggle
+$(".accordion_menu img").on("click", (e) => {
+  const target = $(e.target);
+  target.toggleClass("active");
 });
 
 // 섹션스크롤

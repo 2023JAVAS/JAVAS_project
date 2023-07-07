@@ -6,6 +6,15 @@ body {
   width: 100%;
 }
 
+.content {
+  font-family: var(--ko-font-pr);
+}
+
+.content:last-child {
+  width: 83%;
+  margin: 20vh auto;
+}
+
 /*****  메인제목 *****/
 .main-title {
   margin: 9vh;
@@ -18,7 +27,6 @@ body {
 }
 
 .main-title p {
-  font-family: var(--ko-font-pr);
   font-size: 1vw;
   margin-left: 0.7vw;
 }
@@ -30,85 +38,80 @@ body {
 }
 
 /*****  오시는길 *****/
-.map {
-  width: 83%;
-  height: 50vh;
-  margin: 20vh auto 35vh;
-  font-family: var(--ko-font-nn);
-}
-
-.map h2 {
-  font-size: 2.2vw;
-  margin-bottom: 8vh;
-  font-weight: 700;
-}
-
-.map-title {
+.accordion_title {
   display: flex;
-}
-.map-title svg {
-  fill: #5f9ea0;
-}
-
-/*****  자가용,버스 li *****/
-.map-slide-menu li {
-  padding: 2vh 0 10vh 0;
-  border-bottom: 1px solid #7a7a7a;
-}
-.map-slide-menu li:first-child {
-  border-top: 1px solid #7a7a7a;
-}
-
-/*****  자가용,버스 제목 *****/
-.map .map-slide-menu-title {
-  height: 10vh;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  margin-bottom: 10vh;
 }
 
-.map-slide-menu h3 {
-  font-size: 1.5vw;
+.accordion_title svg {
+  fill: cadetblue;
+  margin-right: 1vw;
+}
+
+.accordion_title h3 {
+  font-size: 1.6vw;
   font-weight: 600;
-  color: #111;
-  margin: 3vh 0 0 1vw;
-  cursor: pointer;
+}
+
+/* 오시는길 아코디언 메뉴 */
+
+/***** 자가용, 버스  *****/
+.accordion_menu li {
+  margin: 5vh 0;
+  font-size: 1.2vw;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  border-bottom: 1px solid #000;
+  padding: 2.5vh 0 8vh 0;
   position: relative;
 }
 
-.map-slide-menu h3::after {
-  content: "";
-  width: 1.3vw; /* 사이즈 */
-  height: 1.3vw; /* 사이즈 */
-  border-top: 2px solid #121212; /* 선 두께 */
-  border-right: 2px solid #121212; /* 선 두께 */
-  border-radius: 1px;
-  display: inline-block;
-  transform: rotate(135deg); /* 각도 */
+.accordion_menu li img {
   position: absolute;
-  top: 1px;
-  left: 80vw;
+  right: 1vw;
+  top: 3vh;
+  cursor: pointer;
 }
 
-.active::after {
-  transform: rotate("180deg");
+.accordion_menu li:last-child {
+  padding: 2.5vh 0 10vh 0;
 }
 
-/*****  자가용,버스 글 *****/
-.map p {
+/***** img toggleClass *****/
+.accordion_menu li img.active {
+  transform: rotate(180deg);
+}
+
+/***** 안의 내용 *****/
+.accordion_menu li p {
   font-size: 1vw;
-  padding: 7vh 0 0 2vw;
-  line-height: 1.7;
+  font-weight: 400;
+  margin-left: 1vw;
   display: none;
 }
 
-.map .bold {
-  font-weight: 600;
-  font-size: 1.3vw;
-  color: cadetblue;
+.accordion_menu li:first-child p {
+  line-height: 1.5;
+  margin-top: 4vh;
 }
 
-.map .small {
-  margin-top: 2.7vh;
-  font-size: 0.8vw;
+.accordion_menu .bus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 4vh;
+  display: none;
+}
+
+.accordion_menu li .bus .bold {
+  font-weight: 600;
+  color: cadetblue;
+  font-size: 1.1vw;
+}
+
+.accordion_menu li .bus .small {
+  font-size: 0.9vw;
+  margin-top: 1vw;
 }

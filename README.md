@@ -30,3 +30,4 @@
 - index.js - css 조금 수정 완료 -최건-
 - contact 페이지 퍼블리싱 완료 - 이지은
 - index 페이지 틀어진 부분 수정 완료 -이수민- 
+- map 페이지 퍼블리싱 완료. kakaomap 삽입 및 slideToggle로 버스, 지하철 안내문을 완성함 -이예지-
