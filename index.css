@@ -5,17 +5,25 @@
   --ko-font-pr: 'Pretendard Variable', '맑은고딕', sans-serif;
   --ko-font-nn: 'NanumSquare', '맑은고딕', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #000;
   text-transform: uppercase;
   color: #fff;
   font-family: var(--en-font);
 }
+body > div {
+  position: relative;
+  z-index: 5;
+}
 
 /***** header *****/
 header {
   color: #fff;
   background-color: transparent;
+  z-index: 6;
 }
 
 .header {
@@ -281,15 +289,19 @@ header {
 
 /***** 메인 애니메이션 *****/
 .main_animation {
+  margin: 0 auto;
   overflow: hidden;
   width: 100%;
   height: 80vh;
+  /* box-sizing: border-box; */
+  /* z-index: -999; */
+  /* background: url(./images/main_bayhill.jpg) no-repeat 50% / contain;
+  background-size: 55%; */
+  background-color: #000;
+
   position: relative;
-  box-sizing: border-box;
-  z-index: -999;
-  background: url(./images/main_bayhill.jpg) no-repeat 50% / contain;
-  background-size: 55%;
 }
+<<<<<<< HEAD
 /**** 스크롤링 연습 아래****/
 /* .zoom {
   width: 100%;
@@ -306,16 +318,27 @@ img {
 } */
 
 /**** 스크롤링 연습 위 ****/
+=======
+.main_animation .scaleDown {
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform-origin: 50% 50%;
+}
+>>>>>>> 98868152a70ec3568261d6f55d3c6ce047add142
 
 .main_animation .ani-title {
   display: flex;
-
   align-items: center;
   white-space: nowrap;
-
   position: absolute;
   top: 50%;
   overflow: hidden;
+
+  transform-origin: 50% 50%;
 }
 .main_animation .ani-title .ani-title_flow {
   font-size: 6.25rem;
@@ -342,30 +365,32 @@ img {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  background-color: #000;
+  padding-bottom: 2vh;
 }
 
 /***** room_category 3개 섹션  *****/
 .room_category {
   width: 100%;
   height: 93vh;
-  margin: 0 auto;
-  padding-top: 4vh;
-  margin-bottom: 7vh;
+  margin: 0px auto;
+  padding: 7vh0;
+  background-color: #000;
 }
 .room_category h1 {
   text-align: center;
   font-size: 3.125rem;
   font-weight: 700;
-  margin: 4.375rem 0;
-  padding-bottom: 3vw;
+  padding: 5vh 0;
   border-bottom: 1px solid #fff;
+  margin-bottom: 5vh;
 }
 .room_category_3img .category_txt h3 {
   font-size: 2.375rem;
   font-weight: 700;
 }
 .room_category_3img {
-  padding-bottom: 5vw;
+  padding-bottom: 3vw;
   border-bottom: 1px solid #fff;
 
   display: flex;
@@ -483,11 +508,14 @@ img {
   font-weight: 700;
   margin-top: 10vh;
 }
+.welcom .welcom_section h1 span {
+  font-size: 3.5rem;
+}
 .welcom .welcom_section h2 {
   font-family: var(--ko-font-pr);
   font-size: 2.25rem;
   font-weight: 600;
-  margin-top: 15vh;
+  margin-top: 12vh;
   line-height: 1.4;
 }
 .welcom .welcom_section p {
@@ -498,6 +526,7 @@ img {
 }
 .welcom .welcom_section .welcom_btn {
   font-family: var(--ko-font-pr);
+  width: 8.35vw;
 }
 .welcom .welcom_section .welcom_btn span {
   margin-top: 6.5vh;
@@ -505,16 +534,12 @@ img {
   height: 2.938rem;
   text-align: center;
 }
-.welcom .welcom_section .welcom_btn:hover {
-  background: transparent;
-  color: #000;
-  box-shadow: -7px -7px 20px 0px #2221, -4px -4px 5px 0px #2221,
-    7px 7px 20px 0px #2221, 4px 4px 5px 0px #2221;
-}
+
 .welcom .welcom_section .welcom_btn span {
   background-color: #000;
   color: #fff;
   height: 3vw;
+
   line-height: 3vw;
   display: block;
   position: relative;
@@ -552,8 +577,8 @@ img {
 }
 .welcom_section .welcom_section_img img:nth-child(1) {
   position: absolute;
-  top: 25%;
-  right: 20%;
+  top: 22%;
+  right: 17%;
 }
 .welcom_section .welcom_section_img img:nth-child(2) {
   position: absolute;
@@ -567,7 +592,8 @@ img {
   height: 50vh;
   background-color: #eae8e1;
   color: #000;
-  font-size: 5.625rem;
+  /* font-size: 5.625rem; */
+  font-size: 6.5rem;
   padding-top: 17vh;
   overflow: hidden;
   /** 230706 좌우 롤링 수정 후 가로스크롤 생겨 수정 반영함 **/
@@ -582,7 +608,6 @@ img {
 .sideimg_text {
   width: 100%;
   background-color: #eae8e1;
-  padding-bottom: 15vh;
 }
 .sideimg_text .sideimg_text_top {
   width: 95%;
@@ -590,14 +615,18 @@ img {
   position: relative;
 }
 .sideimg_text .sideimg_text_top img:nth-child(1) {
+  width: 26.5vw;
+  height: 16.5vw;
   position: absolute;
   top: 15%;
-  left: 10%;
+  left: 21%;
 }
 .sideimg_text .sideimg_text_top img:nth-child(2) {
+  width: 22vw;
+  height: 24vw;
   position: absolute;
-  top: 45%;
-  right: 10%;
+  top: 37%;
+  right: 2%;
   margin-bottom: 10vh;
 }
 .sideimg_text .sideimg_quote {
@@ -632,6 +661,8 @@ img {
   position: relative;
 }
 .sideimg_text .sideimg_text_bottom img:nth-child(1) {
+  width: 18vw;
+  height: 24vw;
   position: absolute;
   top: 15%;
   left: 10%;
@@ -650,6 +681,13 @@ footer {
   color: #fff;
   height: 44vh;
   width: 100%;
+
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+}
+footer .footer_info {
+  z-index: 2;
 }
 
 .footer {
