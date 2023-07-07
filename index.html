@@ -66,7 +66,6 @@
     </header>
 
     <!----- 메인 애니메이션 ----->
-
     <div class="main_animation">
         <!----- 스크롤 줌 아래 ----->
         <!-- <div class="zoom">
@@ -93,7 +92,7 @@
         </div>
     </div>
 
-    <!----- 첫번째 사진 애니메이션 밑에 화살표 ----->
+    <!----- 메인 애니메이션 밑에 room으로 연결되는 화살표 ----->
     <div class="arrow">
         <a href="#room" class="down_arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -8 24 24" width="40"
                 fill="#fff">
@@ -103,58 +102,77 @@
             </svg></a>
     </div>
 
-    <!----- room_category 3개 섹션 ----->
-    <!-- 화살표 클릭시 room_category로 넘어가기 위해 id추가 -->
-    <div class="room_category" id="room">
+    <!----- 이미지+텍스트 박스 3개  ----->
+    <!-- 화살표 클릭시 div-room으로 넘어가기 위해 id선택자 추가 -->
+    <div class="room" id="room">
         <h1>room</h1>
 
-        <div class="room_category_3img">
-            <div class="castle category_txt">
-                <h3>the castle</h3>
+        <!-- 이미지 박스 세개 section -->
+        <div class="img_sesction">
 
-                <div class="txt_hidden">
-                    <ul>
-                        <li>the castle</li>
-                        <li><span>dream come true</span> dream come true <span>dream come true</span> dream come true
-                            <span>dream come true</span> dream come true <span>dream come true</span>
-                        </li>
-                        <li>discover</li>
-                    </ul>
-                </div>
+            <!-- 왼쪽박스 -->
+            <div class="box box_left">
+                <h2>the castle</h2>
+
+                <!-- hover시 나타나는 텍스트 -->
+                <ul class="txt_hover">
+                    <li>the castle</li>
+                    <li class="animation_txt">
+                        <!-- 움직이는 텍스트 -->
+                        <div class="flow">dream come true</div>
+                        <div class="flow bold">dream come true</div>
+                        <div class="flow">dream come true</div>
+                        <div class="flow bold">dream come true</div>
+                        <div class="flow">dream come true</div>
+                    <li>discover</li>
+                </ul>
             </div>
 
-            <div class="villa category_txt">
-                <h3>ocean villa</h3>
-                <div class="txt_hidden">
-                    <ul>
-                        <li>ocean villa</li>
-                        <li> <span>swimming on the sunset</span> swimming on the sunset <span>swimming on the
-                                sunset</span> swimming on the sunset <span>swimming on the sunset</span> swimming on the
-                            sunset <span>swimming on the sunset</span></li>
-                        <li>discover</li>
-                    </ul>
-                </div>
+            <!-- 가운데박스 -->
+            <div class="box box_middle">
+                <h2>ocean villa</h2>
+
+                <!-- hover시 나타나는 텍스트 -->
+                <ul class="txt_hover">
+                    <li>ocean villa</li>
+                    <li class="animation_txt">
+                        <!-- 움직이는 텍스트 -->
+                        <div class="flow">swimming on the sunset</div>
+                        <div class="flow bold">swimming on the sunset</div>
+                        <div class="flow">swimming on the sunset</div>
+                        <div class="flow bold">swimming on the sunset</div>
+                        <div class="flow">swimming on the sunset</div>
+                    </li>
+                    <li>discover</li>
+                </ul>
             </div>
 
-            <div class="honeymoon category_txt">
-                <h3>honeymoon villa</h3>
-                <div class="txt_hidden">
-                    <ul>
-                        <li>honeymoon villa</li>
-                        <li><span>just the two of us</span> just the two of us <span>just the two of us</span> just the
-                            two of us <span>just the two of us</span> just the two of us <span>just the two of us</span>
-                        </li>
-                        <li>discover</li>
-                    </ul>
-                </div>
+            <!-- 오른쪽 박스 -->
+            <div class="box box_right">
+                <h2>honeymoon villa</h2>
+
+                <!-- hover시 나타나는 텍스트 -->
+                <ul class="txt_hover">
+                    <li>honeymoon villa</li>
+                    <li class="animation_txt">
+                        <!-- 움직이는 텍스트 -->
+                        <div class="flow">just the two of us</div>
+                        <div class="flow bold">just the two of us</div>
+                        <div class="flow">just the two of us</div>
+                        <div class="flow bold">just the two of us</div>
+                        <div class="flow">just the two of us</div>
+                    </li>
+                    <li>discover</li>
+                </ul>
             </div>
         </div>
+
     </div>
 
     <!----- 메인 소개글과 사진 ----->
-    <div class="welcom">
-        <div class="welcom_section">
-            <div class="welcom_section_txt">
+    <div class="welcome">
+        <div class="welcome_section">
+            <div class="welcome_section_txt">
                 <h1>welcome to<br><span>bay hill pool & villa</span></h1>
 
                 <h2>제주도 최고의 럭셔리 풀빌라, <br>베이힐풀앤빌라</h2>
@@ -163,18 +181,18 @@
                     전망
                     베이힐에서 느껴보세요</p>
 
-                <div class="welcom_btn">
+                <div class="welcome_btn">
                     <span><a href="#">안내도 보기</a></span>
                 </div>
             </div>
-            <div class="welcom_section_img">
+            <div class="welcome_section_img">
                 <img src="./images/sideimg_1.png" alt="자연이 보이는 숙소옆 소규모 수영장이 있고 왼쪽으론 의자와 소파가 나란히 놓아져있다.">
                 <img src="./images/sideimg_2.png" alt="석양이 뜬 야외 수영장에 야자수가 비치고 파라솔과 썬배드가 나란히 놓여져있음">
             </div>
         </div>
     </div>
 
-    <!----- 스크롤시 위아래 반대로 글씨 지나가는 부분 ----->
+    <!----- 스크롤시 텍스트 좌우롤링 부분 ----->
     <!-- 좌우롤링을 위해 id추가 230706 최건 -->
     <div class="ani_text">
         <div class="ani_top" id="top">
@@ -197,6 +215,7 @@
             </div>
         </div>
 
+        <!-- 큰따옴표와 텍스트 -->
         <div class="sideimg_quote">
             <p>제주도 최고의 럭셔리 풀빌라, 베이힐풀앤빌라<br> 고객 여러분께 최상의 서비스를 제공합니다<br> 여유롭고 품격 있는 휴식을 경험해 보세요</p>
             <svg viewBox="0 0 106 87" xmlns="http://www.w3.org/2000/svg" fill="#c7c5bf">

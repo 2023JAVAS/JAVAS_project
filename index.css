@@ -361,7 +361,7 @@ img {
   }
 }
 
-/***** 첫번째 사진 애니메이션 밑에 화살표  *****/
+/***** 메인 애니메이션 밑에 room으로 연결되는 화살표  *****/
 .arrow {
   width: 100%;
   margin: 0 auto;
@@ -370,99 +370,109 @@ img {
   padding-bottom: 2vh;
 }
 
-/***** room_category 3개 섹션  *****/
-.room_category {
+/***** 이미지+텍스트 박스 3개  *****/
+.room{
   width: 100%;
-  height: 93vh;
+  height: 100vh;
   margin: 0 auto;
-  padding: 7vh0;
   background-color: #000;
+  color: #fff;
+  font-family: var(--en-font);
+  text-transform: uppercase;
+  padding-top: 2vw;
 }
-.room_category h1 {
+
+.room h1{
   text-align: center;
   font-size: 3.125rem;
   font-weight: 700;
   padding: 5vh 0;
   border-bottom: 1px solid #fff;
-  margin-bottom: 5vh;
 }
-.room_category_3img .category_txt h3 {
-  font-size: 2.375rem;
-  font-weight: 700;
-}
-.room_category_3img {
-  padding-bottom: 3vw;
-  border-bottom: 1px solid #fff;
 
+.room .img_sesction{
+  margin: 0 auto;
+  text-align: center;
   display: flex;
   justify-content: space-evenly;
-  margin: 0 auto;
+  border-bottom: 1px solid #fff;
+  padding: 2vw 0;
+  box-sizing: border-box;
 }
-.room_category_3img .category_txt {
+
+.room .img_sesction .box{
   margin: 0 2vh;
   width: 36.188rem;
   height: 35.313rem;
+
   font-size: 2.375rem;
-  font-weight: 600;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
   overflow: hidden;
   /** 230706 애니메이션 텍스트 사진 넘치는 부분 수정함 **/
 }
-.room_category_3img .category_txt .txt_hidden {
+
+.room .img_sesction .box h2{
+  font-size: 2.375rem;
+  font-weight: 700;
+}
+
+.room .img_sesction .txt_hover{
   display: none;
 }
 
-.room_category_3img .castle {
+.room .img_sesction .box_left{
   background: url(./images/room_category_1.jpg) no-repeat 50% / cover,
     rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
 }
-.room_category_3img .villa {
+
+.room .img_sesction .box_middle{
   background: url(./images/room_category_2.jpg) no-repeat 50% / cover
     rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
 }
-.room_category_3img .honeymoon {
+
+.room .img_sesction .box_right{
   background: url(./images/room_category_3.jpg) no-repeat 50% / cover,
-    rgba(0, 0, 0, 0.5);
+  rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
 }
 
-/***** room_category 3개 섹션 hover할 때 *****/
-.room_category_3img .category_txt:hover {
+/***** hover시 나타나는 텍스트 *****/
+.room .img_sesction .box:hover{
   transition: 0.6s;
-  width: 50rem;
-}
-.room_category_3img .category_txt:hover {
+  width: 50rem;  
   filter: brightness(160%);
 }
-.room_category_3img .category_txt:hover h3 {
+
+.room .img_sesction .box:hover h2{
   display: none;
 }
-.room_category_3img .category_txt:hover .txt_hidden {
-  display: block;
+
+.room .img_sesction .box:hover .txt_hover{
+  display: grid;
   white-space: nowrap;
 }
-.room_category_3img .category_txt:hover .txt_hidden ul {
-  display: grid;
-}
-.room_category_3img .category_txt:hover .txt_hidden ul li {
+
+.room .img_sesction .box:hover .txt_hover li{
   margin: 10vh auto;
+}
+
+.room .img_sesction .box:hover .txt_hover li:first-child{
+  font-size: 1.25rem;
   font-weight: 600;
 }
-.room_category_3img .category_txt:hover .txt_hidden ul li:first-child {
-  font-size: 1.25rem;
-}
-.room_category_3img .category_txt:hover .txt_hidden ul li:last-child {
+
+.room .img_sesction .box:hover .txt_hover li:last-child{
   font-size: 0.875rem;
+  font-weight: 300;
   position: relative;
-  font-weight: 200;
 }
-.room_category_3img .category_txt:hover .txt_hidden ul li:last-child::before {
+
+.room .img_sesction .box:hover .txt_hover li:last-child::before{
   content: "";
   border: 1px solid #fff;
   display: block;
@@ -471,10 +481,17 @@ img {
   top: 50%;
   right: 10vh;
 }
-.room_category_3img .category_txt:hover .txt_hidden ul li:nth-child(2) span {
-  font-weight: 100;
+
+.room .img_sesction .box:hover .txt_hover .animation_txt .flow{
+  margin-right: 1vw;
 }
-.room_category_3img .category_txt:hover .txt_hidden ul li:nth-child(2) {
+
+.room .img_sesction .box:hover .txt_hover .animation_txt .bold{
+  font-weight: 200;
+}
+
+.room .img_sesction .box:hover .txt_hover .animation_txt{
+  display: flex;
   font-weight: 600;
 
   content: '';
@@ -492,7 +509,7 @@ img {
 }
 
 /***** 메인 소개글과 사진  *****/
-.welcom {
+.welcome {
   width: 100%;
   height: 100vh;
   background-color: #eae8e1;
@@ -502,7 +519,8 @@ img {
 
   position: relative;
 }
-.welcom .welcom_section {
+
+.welcome .welcome_section {
   width: 90%;
   margin: 0 auto;
   display: flex;
@@ -510,39 +528,44 @@ img {
   align-items: center;
 }
 
-.welcom .welcom_section h1 {
+.welcome .welcome_section h1 {
   font-size: 4.2rem;
   font-weight: 700;
   margin-top: 10vh;
 }
-.welcom .welcom_section h1 span {
+
+.welcome .welcome_section h1 span {
   font-size: 3.5rem;
 }
-.welcom .welcom_section h2 {
+
+.welcome .welcome_section h2 {
   font-family: var(--ko-font-pr);
   font-size: 2.25rem;
   font-weight: 600;
   margin-top: 12vh;
   line-height: 1.4;
 }
-.welcom .welcom_section p {
+
+.welcome .welcome_section p {
   font-family: var(--ko-font-pr);
   font-size: 1.5rem;
   margin-top: 3vh;
   line-height: 1.4;
 }
-.welcom .welcom_section .welcom_btn {
+
+.welcome .welcome_section .welcome_btn {
   font-family: var(--ko-font-pr);
   width: 8.35vw;
 }
-.welcom .welcom_section .welcom_btn span {
+
+.welcome .welcome_section .welcome_btn span {
   margin-top: 6.5vh;
   width: 10.438rem;
   height: 2.938rem;
   text-align: center;
 }
 
-.welcom .welcom_section .welcom_btn span {
+.welcome .welcome_section .welcome_btn span {
   background-color: #000;
   color: #fff;
   height: 3vw;
@@ -551,17 +574,20 @@ img {
   display: block;
   position: relative;
 }
-.welcom .welcom_section .welcom_btn a {
+
+.welcome .welcome_section .welcome_btn a {
   display: block;
 }
-.welcom .welcom_section .welcom_btn span:hover {
+
+.welcome .welcome_section .welcome_btn span:hover {
   background: transparent;
   color: #000;
   box-shadow: -7px -7px 20px 0px #2221, -4px -4px 5px 0px #2221,
     7px 7px 20px 0px #2221, 4px 4px 5px 0px #2221;
 }
-.welcom .welcom_section .welcom_btn span:before,
-.welcom .welcom_section .welcom_btn span:after {
+
+.welcome .welcome_section .welcome_btn span:before,
+.welcome .welcome_section .welcome_btn span:after {
   content: "";
   position: absolute;
   top: 0;
@@ -571,29 +597,33 @@ img {
   background-color: #000;
   transition: 400ms ease all;
 }
-.welcom .welcom_section .welcom_btn span:after {
+
+.welcome .welcome_section .welcome_btn span:after {
   right: inherit;
   top: inherit;
   left: 0;
   bottom: 0;
 }
-.welcom .welcom_section .welcom_btn span:hover:before,
-.welcom .welcom_section .welcom_btn span:hover:after {
+
+.welcome .welcome_section .welcome_btn span:hover:before,
+.welcome .welcome_section .welcome_btn span:hover:after {
   width: 100%;
   transition: 800ms ease all;
 }
-.welcom_section .welcom_section_img img:nth-child(1) {
+
+.welcome_section .welcome_section_img img:nth-child(1) {
   position: absolute;
   top: 21%;
   right: 17%;
 }
-.welcom_section .welcom_section_img img:nth-child(2) {
+
+.welcome_section .welcome_section_img img:nth-child(2) {
   position: absolute;
   top: 60%;
   right: 7%;
 }
 
-/***** 스크롤시 위아래 반대로 글씨 지나가는 부분  *****/
+/***** 스크롤시 텍스트 좌우롤링 부분  *****/
 .ani_text {
   width: 100%;
   height: 50vh;
@@ -603,12 +633,14 @@ img {
   font-size: 6.8rem;
   padding-top: 17vh;
   overflow: hidden;
-  /** 230706 좌우 롤링 수정 후 가로스크롤 생겨 수정 반영함 **/
+  /** 230706 좌우 롤링 수정 후 가로스크롤 생겨 수정함 **/
 }
+
 /***** 230707 좌우롤링을 위해 작성 아래*****/
 .ani_text .ani_bottom {
   margin-left: -1000px;
 }
+
 /***** 230707 좌우롤링을 위해 작성 위*****/
 
 /***** 양쪽으로 2장씩 사진 4개와 가운데 텍스트  *****/
@@ -617,21 +649,25 @@ img {
   background-color: #eae8e1;
   padding-bottom: 50vh;
 }
+
 .sideimg_text img {
   display: inline-block;
 }
+
 .sideimg_text .sideimg_top {
   width: 100%;
   margin: 0 auto;
   height: 40vh;
   position: relative;
 }
+
 .sideimg_text .sideimg_top img:nth-child(1) {
   transform: translate(10vw, 10vw);
   position: relative;
   width: 25vw;
   z-index: 999;
 }
+
 .sideimg_text .line .first {
   content: "";
   position: absolute;
@@ -642,12 +678,14 @@ img {
   height: 40vw;
   display: block;
 }
+
 .sideimg_text .sideimg_top img:nth-child(2) {
   transform: translate(45vw, 15vw);
   width: 20vw;
   position: relative;
   z-index: 999;
 }
+
 .sideimg_text .line .two {
   content: "";
   position: absolute;
@@ -658,18 +696,21 @@ img {
   height: 60vw;
   display: block;
 }
+
 .sideimg_text .sideimg_top {
   width: 100%;
   margin: 0 auto;
   height: 40vh;
   position: relative;
 }
+
 .sideimg_text .sideimg_bottom img:nth-child(1) {
   transform: translate(10vw, 10vw);
   position: relative;
   width: 20vw;
   z-index: 999;
 }
+
 .sideimg_text .line2 .first {
   content: "";
   position: absolute;
@@ -680,12 +721,14 @@ img {
   height: 32vw;
   display: block;
 }
+
 .sideimg_text .sideimg_bottom img:nth-child(2) {
   transform: translate(45vw, 15vw);
   width: 28vw;
   position: relative;
   z-index: 999;
 }
+
 .sideimg_text .line2 .two {
   content: "";
   position: absolute;
@@ -696,6 +739,7 @@ img {
   height: 30vw;
   display: block;
 }
+
 .sideimg_text .sideimg_bottom {
   width: 100%;
   margin: 0 auto;
@@ -703,7 +747,7 @@ img {
   position: relative;
 }
 
-
+/***** 큰따옴표와 텍스트 *****/
 .sideimg_text .sideimg_quote{
   margin: 15vh auto;
   margin-bottom: 7vh;
@@ -715,9 +759,11 @@ img {
 
   position: relative;
 }
+
 .sideimg_text .sideimg_quote p {
   line-height: 1.4;
 }
+
 .sideimg_quote svg{
   width: 5vw;
   height: 4vw;
@@ -739,9 +785,11 @@ footer {
   bottom: 0;
   z-index: 1;
 }
+
 footer .footer_info {
   z-index: 2;
 }
+
 .footer {
   display: flex;
   justify-content: space-around;
@@ -762,6 +810,7 @@ footer .footer_info {
   font-size: 0.917vw;
   line-height: 3;
 }
+
 .footer_info a:last-child {
   transition: 0.6s;
   font-weight: 500;
@@ -769,6 +818,7 @@ footer .footer_info {
   cursor: pointer;
   padding-left: 2px;
 }
+
 .footer_info a:last-child:hover {
   background-color: #fff;
   color: #000;
@@ -783,12 +833,15 @@ footer .copyright {
   font-size: 0.833vw;
   text-transform: none;
 }
+
 footer .copyright .bold {
   font-weight: 500;
 }
+
 footer .copyright {
   border-top: 1px solid #fff;
 }
+
 footer .copyright p {
   padding: 2vw 12vw;
 }
