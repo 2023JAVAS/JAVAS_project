@@ -303,7 +303,7 @@ header {
 
   position: relative;
 }
-<<<<<<< HEAD
+
 /**** 스크롤링 연습 아래****/
 /* .zoom {
   width: 100%;
@@ -320,8 +320,8 @@ img {
 } */
 
 /**** 스크롤링 연습 위 ****/
-=======
-.main_animation .scaleDown {
+
+/* .main_animation .scaleDown {
   width: 50vw;
   height: 50vh;
   position: absolute;
@@ -329,8 +329,8 @@ img {
   left: 50%;
 
   transform-origin: 50% 50%;
-}
->>>>>>>98868152a70ec3568261d6f55d3c6ce047add142 .main_animation .ani-title {
+} */
+main_animation .ani-title {
   display: flex;
   align-items: center;
   white-space: nowrap;
@@ -451,13 +451,16 @@ img {
 }
 .room_category_3img .category_txt:hover .txt_hidden ul li {
   margin: 10vh auto;
+  font-weight: 600;
 }
+
 .room_category_3img .category_txt:hover .txt_hidden ul li:first-child {
   font-size: 1.25rem;
 }
 .room_category_3img .category_txt:hover .txt_hidden ul li:last-child {
   font-size: 0.875rem;
   position: relative;
+  font-weight: 200;
 }
 .room_category_3img .category_txt:hover .txt_hidden ul li:last-child::before {
   content: "";
@@ -468,10 +471,17 @@ img {
   top: 50%;
   right: 10vh;
 }
+.room_category_3img .category_txt:hover .txt_hidden ul li:nth-child(2) span {
+  font-weight: 100;
+}
 .room_category_3img .category_txt:hover .txt_hidden ul li:nth-child(2) {
+<<<<<<< Updated upstream
   content: "";
+=======
+  font-weight: 600;
+  content: '';
+>>>>>>> Stashed changes
   animation: flow 8s linear infinite;
-  font-weight: 400;
 }
 @keyframes flow {
   0% {
@@ -577,7 +587,7 @@ img {
 }
 .welcom_section .welcom_section_img img:nth-child(1) {
   position: absolute;
-  top: 22%;
+  top: 21%;
   right: 17%;
 }
 .welcom_section .welcom_section_img img:nth-child(2) {
@@ -593,7 +603,7 @@ img {
   background-color: #eae8e1;
   color: #000;
   /* font-size: 5.625rem; */
-  font-size: 6.5rem;
+  font-size: 6.8rem;
   padding-top: 17vh;
   overflow: hidden;
   /** 230706 좌우 롤링 수정 후 가로스크롤 생겨 수정 반영함 **/
