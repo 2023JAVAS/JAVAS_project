@@ -1,9 +1,13 @@
 @charset "utf-8";
 
 :root {
-  --en-font: 'Gotham', 'Arial', sans-serif;
-  --ko-font-nn: 'NanumSquare', '맑은고딕', sans-serif;
-  --ko-font-pr: 'Pretendard Variable', '맑은고딕', sans-serif;
+  --en-font: "Gotham", "Arial", sans-serif;
+  --ko-font-nn: "NanumSquare", "맑은고딕", sans-serif;
+  --ko-font-pr: "Pretendard Variable", "맑은고딕", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 /***** header *****/
@@ -51,7 +55,7 @@ header {
 
 /***** menu hover 효과 *****/
 .menu li:nth-child(1) a:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -69,7 +73,7 @@ header {
 }
 
 .menu li:nth-child(2) a:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -86,7 +90,7 @@ header {
 }
 
 .menu li:nth-child(3) a:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -0.5vw;
@@ -103,7 +107,7 @@ header {
 }
 
 .menu li:nth-child(4) a:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -0.5vw;
@@ -120,7 +124,7 @@ header {
 }
 
 .menu li:nth-child(5) a:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -0.5vw;
@@ -175,7 +179,7 @@ header {
 }
 /***** 1920 / 1440 / 1400 아래*****/
 .logo::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 35%;
 
@@ -190,7 +194,7 @@ header {
 }
 
 .logo::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 35%;
 
