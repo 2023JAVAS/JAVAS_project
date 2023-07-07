@@ -20,6 +20,10 @@ header {
   color: #000;
 }
 
+.header p:first-child {
+  font-weight: 200;
+}
+
 .header.active {
   background-color: #000;
   color: #fff;
@@ -140,7 +144,7 @@ header {
   width: 8vw;
   height: 6vh;
   line-height: 6vh;
-  margin: 2px 0 0 2px;
+  margin: 2px 0 0 0.5vw;
   transition: 0.4s;
 }
 
@@ -171,8 +175,8 @@ header {
   content: "";
   position: absolute;
   top: 35%;
-  left: -320%;
-  width: 313%;
+  left: -36vw;
+  width: 35vw;
   height: 1px;
   background-color: #000;
 }
@@ -181,8 +185,8 @@ header {
   content: "";
   position: absolute;
   top: 35%;
-  left: 105%;
-  width: 320%;
+  left: 14vw;
+  width: 37vw;
   height: 1px;
   background-color: #000;
 }
@@ -284,26 +288,40 @@ footer {
   font-family: var(--en-font);
   background-color: #000;
   color: #fff;
+  height: 44vh;
+  width: 100%;
 }
 
 .footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10vh 0 12vh 0;
+  padding: 7vh 0 5vh 0;
 }
 
 /***** footer_logo *****/
 .footer_logo p {
   font-size: 5rem;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 /***** footer_info *****/
 .footer_info {
   font-family: var(--ko-font-nn);
-  font-weight: 500;
+  font-weight: 300;
   font-size: 1.1rem;
+  line-height: 3;
+}
+
+.footer_info p:last-child {
+  transition: 0.6s;
+  font-weight: 500;
+  width: 21vw;
+}
+
+.footer_info p:last-child:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 /***** copyright *****/
@@ -321,5 +339,5 @@ footer .copyright {
 }
 
 footer .copyright p {
-  padding: 40px 250px;
+  padding: 2vw 12vw;
 }
