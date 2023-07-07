@@ -279,7 +279,6 @@ header {
 
 /***** footer *****/
 footer {
-  height: 45vh;
   font-family: var(--en-font);
   background-color: #000;
   color: #fff;
@@ -305,14 +304,9 @@ footer {
   font-size: 1.1rem;
 }
 
-.footer_info p {
-  margin: 12px;
-}
-
 /***** copyright *****/
 footer .copyright {
   font-weight: 300;
-  margin-left: 12vw;
   position: relative;
 }
 
@@ -320,12 +314,10 @@ footer .copyright .bold {
   font-weight: 500;
 }
 
-footer .copyright::before {
-  content: "";
-  width: 99.1vw;
-  height: 1px;
-  background-color: #fff;
-  position: absolute;
-  top: -4vh;
-  left: -12vw;
+footer .copyright {
+  border-top: 1px solid #fff;
+}
+
+footer .copyright p {
+  padding: 40px 250px;
 }
