@@ -40,6 +40,8 @@ header {
   padding: 9vh 0 0 5vw;
   display: none;
   background-color: #000;
+  position: relative;
+  z-index: 10;
 }
 
 .menu li {
@@ -328,9 +330,7 @@ img {
 
   transform-origin: 50% 50%;
 }
->>>>>>> 98868152a70ec3568261d6f55d3c6ce047add142
-
-.main_animation .ani-title {
+>>>>>>>98868152a70ec3568261d6f55d3c6ce047add142 .main_animation .ani-title {
   display: flex;
   align-items: center;
   white-space: nowrap;

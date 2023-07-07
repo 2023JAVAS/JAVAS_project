@@ -24,7 +24,6 @@ function scrollRotate() {
   rombo.style.transform = 'translateX(' + window.pageYOffset / 3 + 'px)';
 }
 
-<<<<<<< HEAD
 //스크롤시 이미지 크게 보이기
 // const zoomElement = document.querySelector('.zoom');
 // const fadeElement = document.querySelector('.fade');
@@ -95,14 +94,3 @@ function scrollRotate() {
 // // Positions the afterZoom element right below the zoomed image
 // afterZoomElement.style.top =
 //   ABSOLUTE + IMAGE_HEIGHT_MAX / 1 + HEIGHT / 1 + 'px';
-=======
-gsap.set('.scaleDown', { xPercent: -50, yPercent: -50 });
-gsap.to('.scaleDown', {
-  scale: 2,
-  scrollTrigger: {
-    trigger: '.main_animation',
-    pin: '.main_animation',
-    scrub: true,
-  },
-});
->>>>>>> 98868152a70ec3568261d6f55d3c6ce047add142
