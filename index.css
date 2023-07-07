@@ -386,6 +386,7 @@ header {
     rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
 }
+
 /***** room_category 3개 섹션 hover할 때 *****/
 .room_category_3img .category_txt:hover {
   transition: 0.6s;
@@ -477,6 +478,7 @@ header {
   line-height: 1.4;
 }
 .welcom .welcom_section .welcom_btn {
+  text-transform: capitalize;
   margin-top: 6.5vh;
   border: 1px solid #333;
   border-radius: 6.25rem;
@@ -551,6 +553,7 @@ header {
   line-height: 1.4;
 }
 
+/** svg큰따옴표 z-index가 안먹음..**/
 .sideimg_text .sideimg_quote svg {
   width: 106px;
   height: 87px;
@@ -581,6 +584,7 @@ footer {
   font-family: var(--en-font);
   background-color: #000;
   color: #fff;
+  text-transform: none;
 }
 
 .footer {
