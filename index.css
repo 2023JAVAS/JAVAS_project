@@ -1,9 +1,9 @@
 @charset "utf-8";
 
 :root {
-  --en-font: 'Gotham', serif;
-  --ko-font-pr: 'Pretendard Variable', '맑은고딕', sans-serif;
-  --ko-font-nn: 'NanumSquare', '맑은고딕', sans-serif;
+  --en-font: "Gotham", serif;
+  --ko-font-pr: "Pretendard Variable", "맑은고딕", sans-serif;
+  --ko-font-nn: "NanumSquare", "맑은고딕", sans-serif;
 }
 body {
   background-color: #000;
@@ -47,7 +47,7 @@ header {
 
 /***** menu hover 효과 *****/
 .menu li:nth-child(1) a:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -65,7 +65,7 @@ header {
 }
 
 .menu li:nth-child(2) a:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -82,7 +82,7 @@ header {
 }
 
 .menu li:nth-child(3) a:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -99,7 +99,7 @@ header {
 }
 
 .menu li:nth-child(4) a:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -116,7 +116,7 @@ header {
 }
 
 .menu li:nth-child(5) a:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -168,7 +168,7 @@ header {
 }
 
 .logo::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 35%;
   left: -32vw;
@@ -178,7 +178,7 @@ header {
 }
 
 .logo::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 35%;
   left: 110%;
@@ -416,7 +416,7 @@ header {
   position: relative;
 }
 .room_category_3img .category_txt:hover .txt_hidden ul li:last-child::before {
-  content: '';
+  content: "";
   border: 1px solid #fff;
   display: block;
   width: 3vw;
@@ -425,7 +425,7 @@ header {
   right: 10vh;
 }
 .room_category_3img .category_txt:hover .txt_hidden ul li:nth-child(2) {
-  content: '';
+  content: "";
   animation: flow 8s linear infinite;
   font-weight: 400;
 }
@@ -511,9 +511,8 @@ header {
   /** 230706 좌우 롤링 수정 후 가로스크롤 생겨 수정 반영함 **/
 }
 /***** 230706 좌우롤링을 위해 작성 아래*****/
-.ani_text .ani_bottom{
+.ani_text .ani_bottom {
   margin-left: -250px;
-
 }
 /***** 230706 좌우롤링을 위해 작성 위*****/
 
@@ -545,12 +544,15 @@ header {
   font-family: var(--ko-font-nn);
   font-size: 2.25rem;
   text-align: center;
-
   position: relative;
 }
 .sideimg_text .sideimg_quote p {
   font-family: var(--ko-font-pr);
   line-height: 1.4;
+  position: absolute;
+  top: 12.5vh;
+  left: 33.5vw;
+  z-index: 3;
 }
 
 /** svg큰따옴표 z-index가 안먹음..**/
@@ -561,6 +563,7 @@ header {
   position: absolute;
   left: 30%;
   top: 35%;
+  z-index: 2;
 }
 .sideimg_text .sideimg_text_bottom {
   height: 100vh;
@@ -580,54 +583,64 @@ header {
 
 /***** footer *****/
 footer {
-  height: 45vh;
   font-family: var(--en-font);
   background-color: #000;
   color: #fff;
-  text-transform: none;
+  height: 44vh;
+  width: 100%;
 }
 
 .footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10vh 0 12vh 0;
+  padding: 7vh 0 5vh 0;
 }
 
 /***** footer_logo *****/
 .footer_logo p {
-  font-size: 5rem;
-  font-weight: 300;
+  font-size: 4.167vw;
+  font-weight: 200;
 }
 
 /***** footer_info *****/
 .footer_info {
   font-family: var(--ko-font-nn);
-  font-weight: 500;
-  font-size: 1.1rem;
+  font-weight: 300;
+  font-size: 0.917vw;
+  line-height: 3;
 }
 
-.footer_info p {
-  margin: 12px;
+.footer_info a:last-child {
+  transition: 0.6s;
+  font-weight: 500;
+  width: 11.5vw;
+  cursor: pointer;
+  padding-left: 2px;
+}
+
+.footer_info a:last-child:hover {
+  background-color: #fff;
+  color: #000;
+  padding: 0.5vw;
+  font-weight: 500;
 }
 
 /***** copyright *****/
 footer .copyright {
   font-weight: 300;
-  margin-left: 12vw;
   position: relative;
+  font-size: 0.833vw;
 }
 
 footer .copyright .bold {
   font-weight: 500;
 }
 
-footer .copyright::before {
-  content: '';
-  width: 99.1vw;
-  height: 1px;
-  background-color: #fff;
-  position: absolute;
-  top: -4vh;
-  left: -12vw;
+footer .copyright {
+  border-top: 1px solid #fff;
+}
+
+footer .copyright p {
+  padding: 2vw 12vw;
 }

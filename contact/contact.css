@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+:root {
+  --en-font: "Gotham", serif;
+  --ko-font-pr: "Pretendard Variable", "맑은고딕", sans-serif;
+  --ko-font-nn: "NanumSquare", "맑은고딕", sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+/***** header *****/
+header {
+  color: #fff;
+  background-color: transparent;
+}
+
+.header {
+  padding: 1vh 0 1vh 0;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+/***** 메뉴 *****/
+.menu {
+  background-color: #000;
+}
+
+/***** menu hover 효과 *****/
+.menu li:nth-child(1) a:after {
+  background-color: #ffffff;
+}
+
+.menu li:nth-child(2) a:after {
+  background-color: #ffffff;
+}
+
+.menu li:nth-child(3) a:after {
+  background-color: #ffffff;
+}
+
+.menu li:nth-child(4) a:after {
+  background-color: #ffffff;
+}
+
+.menu li:nth-child(5) a:after {
+  background-color: #ffffff;
+}
+
+/***** 예약버튼 *****/
+.reservation_btn:hover {
+  background-color: #b4b4b43a;
+  border-radius: 5px;
+}
+
+.logo::before {
+  background-color: #fff;
+}
+
+.logo::after {
+  background-color: #fff;
+}
+
+.logo.active::before {
+  background-color: #fff;
+}
+
+.logo.active::after {
+  background-color: #fff;
+}
+
+.checkmark span {
+  background-color: rgb(255, 255, 255);
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 3.5vw;
+  font-family: var(--en-font);
+}
+
+.main h2 {
+  font-size: 1.563vw;
+  font-weight: 500;
+}
+
+.main h1 {
+  font-size: 3.229vw;
+  font-weight: bold;
+}
+
+.main .main_wrapper {
+  padding-top: 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_txt {
+  width: 65%;
+  font-family: var(--ko-font-pr);
+}
+
+.main_txt span {
+  font-size: 2.083vw;
+}
+
+.main_txt li {
+  height: 33.3%;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1vw;
+  line-height: 1.5;
+  transition: 0.3s;
+}
+
+.main_txt li:hover {
+  transform: translateX(30px);
+}
