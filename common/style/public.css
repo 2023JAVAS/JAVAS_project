@@ -1,15 +1,9 @@
 @charset "utf-8";
 
-<<<<<<< HEAD
-body {
-  font-family: 'NanumSquare', '맑은 고딕', 'Malgun Gothic', 나눔고딕, 돋움,
-    Dotum, 굴림, Gulim, 'Apple SD Gothic Neo', sans-serif;
-=======
 :root {
-  --en-font: "Gotham", "Arial", sans-serif;
-  --ko-font-nn: "NanumSquare", "맑은고딕", sans-serif;
-  --ko-font-pr: "Pretendard Variable", "맑은고딕", sans-serif;
->>>>>>> 9f432893c15355792549baef46e1b94c47ae0743
+  --en-font: 'Gotham', 'Arial', sans-serif;
+  --ko-font-nn: 'NanumSquare', '맑은고딕', sans-serif;
+  --ko-font-pr: 'Pretendard Variable', '맑은고딕', sans-serif;
 }
 
 /***** header *****/
@@ -151,11 +145,9 @@ header {
   /* width: 8vw; */
   height: 6vh;
   line-height: 6vh;
-<<<<<<< HEAD
-  margin: 6px 0 0 30px;
-=======
+  /* margin: 6px 0 0 30px; */
+
   margin: 2px 0 0 0.5vw;
->>>>>>> 9f432893c15355792549baef46e1b94c47ae0743
   transition: 0.4s;
 }
 
@@ -186,13 +178,13 @@ header {
   content: '';
   position: absolute;
   top: 35%;
-<<<<<<< HEAD
-  left: -32vw; /***** -320% -> -32vw *****/
-  width: 30vw; /***** 313% -> 30vw *****/
-=======
+
+  /*left: -32vw; /***** -320% -> -32vw *****/
+  /*width: 30vw; /***** 313% -> 30vw *****/
+
   left: -36vw;
   width: 35vw;
->>>>>>> 9f432893c15355792549baef46e1b94c47ae0743
+
   height: 1px;
   background-color: #000;
 }
@@ -201,13 +193,13 @@ header {
   content: '';
   position: absolute;
   top: 35%;
-<<<<<<< HEAD
-  left: 110%; /***** 105% -> 110% *****/
-  width: 32vw; /***** 320% -> 32vw *****/
-=======
+
+  /*left: 110%; /***** 105% -> 110% *****/
+  /* width: 32vw; /***** 320% -> 32vw *****/
+
   left: 14vw;
   width: 37vw;
->>>>>>> 9f432893c15355792549baef46e1b94c47ae0743
+
   height: 1px;
   background-color: #000;
 }
@@ -361,21 +353,10 @@ footer .copyright .bold {
   font-weight: 500;
 }
 
-<<<<<<< HEAD
-footer .copyright::before {
-  content: '';
-  width: 99.1vw;
-  height: 1px;
-  background-color: #fff;
-  position: absolute;
-  top: -4vh;
-  left: -12vw;
-=======
 footer .copyright {
   border-top: 1px solid #fff;
 }
 
 footer .copyright p {
   padding: 2vw 12vw;
->>>>>>> 9f432893c15355792549baef46e1b94c47ae0743
 }
