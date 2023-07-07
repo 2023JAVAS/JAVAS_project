@@ -625,7 +625,7 @@ img {
 .sideimg_text .sideimg_text_top img:nth-child(1) {
   transform: translate(10vw, 10vw);
   position: relative;
-  width: 23vw;
+  width: 25vw;
   z-index: 999;
 }
 
@@ -633,7 +633,7 @@ img {
   content: "";
   position: absolute;
   top: 5vw;
-  left: 21.5vw;
+  left: 22vw;
   background-color: #4e4e4e;
   width: 1px;
   height: 40vw;
@@ -642,7 +642,7 @@ img {
 
 .sideimg_text .sideimg_text_top img:nth-child(2) {
   transform: translate(45vw, 15vw);
-  width: 18vw;
+  width: 20vw;
   position: relative;
   z-index: 999;
 }
