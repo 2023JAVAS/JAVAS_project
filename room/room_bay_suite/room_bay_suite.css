@@ -5,6 +5,14 @@ body {
     Dotum, 굴림, Gulim, "Apple SD Gothic Neo", sans-serif;
 }
 
+header {
+  font-family: "Gotham", "Arial", sans-serif;
+}
+
+footer {
+  font-family: "Gotham", "Arial", sans-serif;
+}
+
 /***** 첫번째 슬라이드 *****/
 .swiper1 .mySwiper1 {
   background-color: #ddd;

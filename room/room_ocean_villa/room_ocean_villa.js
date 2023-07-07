@@ -1,8 +1,3 @@
-// a가 가지고 있는 기본 이벤트 제거
-$('a[href="#"]').on("click", (evt) => {
-  evt.preventDefault();
-});
-
 //  첫번째 슬라이드 : swiper 플러그인 사용
 const mySwiper1 = new Swiper(".mySwiper1", {
   loop: true,

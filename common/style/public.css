@@ -1,13 +1,22 @@
 @charset "utf-8";
 
+<<<<<<< HEAD
 body {
   font-family: 'NanumSquare', '맑은 고딕', 'Malgun Gothic', 나눔고딕, 돋움,
     Dotum, 굴림, Gulim, 'Apple SD Gothic Neo', sans-serif;
+=======
+:root {
+  --en-font: "Gotham", "Arial", sans-serif;
+  --ko-font-nn: "NanumSquare", "맑은고딕", sans-serif;
+  --ko-font-pr: "Pretendard Variable", "맑은고딕", sans-serif;
+>>>>>>> 9f432893c15355792549baef46e1b94c47ae0743
 }
+
 /***** header *****/
 header {
   color: #fff;
   background-color: transparent;
+  font-family: var(--en-font);
 }
 
 .header {
@@ -15,6 +24,10 @@ header {
   display: flex;
   justify-content: space-between;
   color: #000;
+}
+
+.header p:first-child {
+  font-weight: 200;
 }
 
 .header.active {
@@ -25,7 +38,7 @@ header {
 /***** 메뉴 *****/
 .menu {
   width: 100%;
-  height: 89vh;
+  height: 90vh;
   padding: 9vh 0 0 5vw;
   display: none;
   background-color: #000;
@@ -39,7 +52,7 @@ header {
 .menu a {
   font-family: var(--ko-font-pr);
   font-weight: 500;
-  font-size: 5rem;
+  font-size: 4.167vw;
 }
 
 /***** menu hover 효과 *****/
@@ -82,7 +95,7 @@ header {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -10px;
+  bottom: -0.5vw;
   width: 1px;
   height: 2px;
   transition: all 0.2s ease-in-out;
@@ -99,7 +112,7 @@ header {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -10px;
+  bottom: -0.5vw;
   width: 1px;
   height: 2px;
   transition: all 0.2s ease-in-out;
@@ -116,7 +129,7 @@ header {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -10px;
+  bottom: -0.5vw;
   width: 1px;
   height: 2px;
   transition: all 0.2s ease-in-out;
@@ -132,12 +145,17 @@ header {
 /***** 예약버튼 *****/
 .reservation_btn {
   font-family: var(--en-font);
+  font-size: 0.833vw;
   font-weight: 300;
   text-align: center;
   /* width: 8vw; */
   height: 6vh;
   line-height: 6vh;
+<<<<<<< HEAD
   margin: 6px 0 0 30px;
+=======
+  margin: 2px 0 0 0.5vw;
+>>>>>>> 9f432893c15355792549baef46e1b94c47ae0743
   transition: 0.4s;
 }
 
@@ -150,7 +168,7 @@ header {
 .logo {
   font-family: var(--en-font);
   font-weight: 200;
-  font-size: 3.5rem;
+  font-size: 2.917vw;
   text-align: center;
   position: relative;
 }
@@ -160,7 +178,7 @@ header {
 }
 
 .logo p:nth-child(2) {
-  font-size: 1.5rem;
+  font-size: 1.25vw;
   margin: 0;
 }
 /***** 1920 / 1440 / 1400 아래*****/
@@ -168,8 +186,13 @@ header {
   content: '';
   position: absolute;
   top: 35%;
+<<<<<<< HEAD
   left: -32vw; /***** -320% -> -32vw *****/
   width: 30vw; /***** 313% -> 30vw *****/
+=======
+  left: -36vw;
+  width: 35vw;
+>>>>>>> 9f432893c15355792549baef46e1b94c47ae0743
   height: 1px;
   background-color: #000;
 }
@@ -178,8 +201,13 @@ header {
   content: '';
   position: absolute;
   top: 35%;
+<<<<<<< HEAD
   left: 110%; /***** 105% -> 110% *****/
   width: 32vw; /***** 320% -> 32vw *****/
+=======
+  left: 14vw;
+  width: 37vw;
+>>>>>>> 9f432893c15355792549baef46e1b94c47ae0743
   height: 1px;
   background-color: #000;
 }
@@ -210,7 +238,7 @@ header {
   display: block;
   position: relative;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 1.04vw;
   user-select: none;
 }
 
@@ -279,47 +307,61 @@ header {
 
 /***** footer *****/
 footer {
-  height: 45vh;
   font-family: var(--en-font);
   background-color: #000;
   color: #fff;
+  height: 44vh;
+  width: 100%;
 }
 
 .footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10vh 0 12vh 0;
+  padding: 7vh 0 5vh 0;
 }
 
 /***** footer_logo *****/
 .footer_logo p {
-  font-size: 5rem;
-  font-weight: 300;
+  font-size: 4.167vw;
+  font-weight: 200;
 }
 
 /***** footer_info *****/
 .footer_info {
   font-family: var(--ko-font-nn);
-  font-weight: 500;
-  font-size: 1.1rem;
+  font-weight: 300;
+  font-size: 0.917vw;
+  line-height: 3;
 }
 
-.footer_info p {
-  margin: 12px;
+.footer_info a:last-child {
+  transition: 0.6s;
+  font-weight: 500;
+  width: 11.5vw;
+  cursor: pointer;
+  padding-left: 2px;
+}
+
+.footer_info a:last-child:hover {
+  background-color: #fff;
+  color: #000;
+  padding: 0.5vw;
+  font-weight: 500;
 }
 
 /***** copyright *****/
 footer .copyright {
   font-weight: 300;
-  margin-left: 12vw;
   position: relative;
+  font-size: 0.833vw;
 }
 
 footer .copyright .bold {
   font-weight: 500;
 }
 
+<<<<<<< HEAD
 footer .copyright::before {
   content: '';
   width: 99.1vw;
@@ -328,4 +370,12 @@ footer .copyright::before {
   position: absolute;
   top: -4vh;
   left: -12vw;
+=======
+footer .copyright {
+  border-top: 1px solid #fff;
+}
+
+footer .copyright p {
+  padding: 2vw 12vw;
+>>>>>>> 9f432893c15355792549baef46e1b94c47ae0743
 }
