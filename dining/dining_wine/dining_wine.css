@@ -1,52 +1,8 @@
 @charset "utf-8";
 
-:root {
-  --en-font: "Gotham", serif;
-  --ko-font-pr: "Pretendard Variable", "맑은고딕", sans-serif;
-  --ko-font-nn: "NanumSquare", "맑은고딕", sans-serif;
-}
-
 body {
   font-family: "NanumSquare", "맑은 고딕", "Malgun Gothic", 나눔고딕, 돋움,
     Dotum, 굴림, Gulim, "Apple SD Gothic Neo", sans-serif;
-}
-
-.logo {
-  font-family: var(--en-font);
-  font-weight: 200;
-  font-size: 2.917vw;
-  text-align: center;
-  position: relative;
-}
-
-.reservation_btn {
-  font-family: var(--en-font);
-  font-weight: 300;
-  text-align: center;
-  width: 8vw;
-  height: 6vh;
-  line-height: 6vh;
-  transition: 0.4s;
-}
-
-.logo::before {
-  content: "";
-  position: absolute;
-  top: 35%;
-  left: -32vw;
-  width: 30vw;
-  height: 1px;
-  background-color: #000;
-}
-
-.logo::after {
-  content: "";
-  position: absolute;
-  top: 35%;
-  left: 110%;
-  width: 32vw;
-  height: 1px;
-  background-color: #000;
 }
 
 /***** 첫번째 슬라이드 *****/
