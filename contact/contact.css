@@ -83,6 +83,10 @@ header {
   font-family: var(--en-font);
 }
 
+.main img {
+  width: 22vw;
+}
+
 .main h2 {
   font-size: 1.563vw;
   font-weight: 500;
