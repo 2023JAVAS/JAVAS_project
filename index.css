@@ -620,13 +620,13 @@ img {
 .sideimg_text img {
   display: inline-block;
 }
-.sideimg_text .sideimg_text_top {
+.sideimg_text .sideimg_top {
   width: 100%;
   margin: 0 auto;
   height: 40vh;
   position: relative;
 }
-.sideimg_text .sideimg_text_top img:nth-child(1) {
+.sideimg_text .sideimg_top img:nth-child(1) {
   transform: translate(10vw, 10vw);
   position: relative;
   width: 25vw;
@@ -642,7 +642,7 @@ img {
   height: 40vw;
   display: block;
 }
-.sideimg_text .sideimg_text_top img:nth-child(2) {
+.sideimg_text .sideimg_top img:nth-child(2) {
   transform: translate(45vw, 15vw);
   width: 20vw;
   position: relative;
@@ -658,13 +658,13 @@ img {
   height: 60vw;
   display: block;
 }
-.sideimg_text .sideimg_text_top {
+.sideimg_text .sideimg_top {
   width: 100%;
   margin: 0 auto;
   height: 40vh;
   position: relative;
 }
-.sideimg_text .sideimg_text_bottom img:nth-child(1) {
+.sideimg_text .sideimg_bottom img:nth-child(1) {
   transform: translate(10vw, 10vw);
   position: relative;
   width: 20vw;
@@ -680,7 +680,7 @@ img {
   height: 32vw;
   display: block;
 }
-.sideimg_text .sideimg_text_bottom img:nth-child(2) {
+.sideimg_text .sideimg_bottom img:nth-child(2) {
   transform: translate(45vw, 15vw);
   width: 28vw;
   position: relative;
@@ -696,33 +696,36 @@ img {
   height: 30vw;
   display: block;
 }
-.sideimg_text .sideimg_text_bottom {
+.sideimg_text .sideimg_bottom {
   width: 100%;
   margin: 0 auto;
   height: 40vh;
   position: relative;
 }
-.sideimg_text .sideimg_quote {
-  padding: 45vh 0 0 0;
-  color: #333;
-  font-family: var(--ko-font-nn);
-  font-size: 1.875vw;
+
+
+.sideimg_text .sideimg_quote{
+  margin: 15vh auto;
+  margin-bottom: 7vh;
   text-align: center;
+  color: #333;
+  font-family: var(--ko-font-pr);
+  font-size: 1.875vw;
+  padding-top: 25vh;
+
   position: relative;
 }
 .sideimg_text .sideimg_quote p {
-  font-family: var(--ko-font-pr);
   line-height: 1.4;
 }
-.sideimg_text .sideimg_quote svg {
+.sideimg_quote svg{
   width: 5vw;
   height: 4vw;
-  opacity: 0.5;
   position: absolute;
-  left: 30vw;
-  bottom: 7vw;
+  top: 20vh;
+  left: 29.5vw;
+  z-index: -77;
 }
-
 
 /***** footer *****/
 footer {
