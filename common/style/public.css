@@ -1,9 +1,9 @@
 @charset "utf-8";
 
 :root {
-  --en-font: "Gotham", "Arial", sans-serif;
-  --ko-font-nn: "NanumSquare", "맑은고딕", sans-serif;
-  --ko-font-pr: "Pretendard Variable", "맑은고딕", sans-serif;
+  --en-font: 'Gotham', 'Arial', sans-serif;
+  --ko-font-nn: 'NanumSquare', '맑은고딕', sans-serif;
+  --ko-font-pr: 'Pretendard Variable', '맑은고딕', sans-serif;
 }
 
 /***** header *****/
@@ -51,7 +51,7 @@ header {
 
 /***** menu hover 효과 *****/
 .menu li:nth-child(1) a:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -69,7 +69,7 @@ header {
 }
 
 .menu li:nth-child(2) a:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -86,7 +86,7 @@ header {
 }
 
 .menu li:nth-child(3) a:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -0.5vw;
@@ -103,7 +103,7 @@ header {
 }
 
 .menu li:nth-child(4) a:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -0.5vw;
@@ -120,7 +120,7 @@ header {
 }
 
 .menu li:nth-child(5) a:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -0.5vw;
@@ -142,9 +142,11 @@ header {
   font-size: 0.833vw;
   font-weight: 300;
   text-align: center;
-  width: 8vw;
+  /* width: 8vw; */
   height: 6vh;
   line-height: 6vh;
+  /* margin: 6px 0 0 30px; */
+
   margin: 2px 0 0 0.5vw;
   transition: 0.4s;
 }
@@ -171,26 +173,37 @@ header {
   font-size: 1.25vw;
   margin: 0;
 }
-
+/***** 1920 / 1440 / 1400 아래*****/
 .logo::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 35%;
+
+  /*left: -32vw; /***** -320% -> -32vw *****/
+  /*width: 30vw; /***** 313% -> 30vw *****/
+
   left: -36vw;
   width: 35vw;
+
   height: 1px;
   background-color: #000;
 }
 
 .logo::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 35%;
+
+  /*left: 110%; /***** 105% -> 110% *****/
+  /* width: 32vw; /***** 320% -> 32vw *****/
+
   left: 14vw;
   width: 37vw;
+
   height: 1px;
   background-color: #000;
 }
+/***** 1920 / 1440 / 1400 위*****/
 
 .logo.active::before {
   background-color: #fff;
@@ -314,15 +327,19 @@ footer {
   line-height: 3;
 }
 
-.footer_info p:last-child {
+.footer_info a:last-child {
   transition: 0.6s;
   font-weight: 500;
-  width: 21vw;
+  width: 11.5vw;
+  cursor: pointer;
+  padding-left: 2px;
 }
 
-.footer_info p:last-child:hover {
+.footer_info a:last-child:hover {
   background-color: #fff;
   color: #000;
+  padding: 0.5vw;
+  font-weight: 500;
 }
 
 /***** copyright *****/
