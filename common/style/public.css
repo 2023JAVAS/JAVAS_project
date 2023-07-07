@@ -1,14 +1,16 @@
 @charset "utf-8";
 
-body {
-  font-family: "NanumSquare", "맑은 고딕", "Malgun Gothic", 나눔고딕, 돋움,
-    Dotum, 굴림, Gulim, "Apple SD Gothic Neo", sans-serif;
-  overflow-x: hidden;
+:root {
+  --en-font: "Gotham", "Arial", sans-serif;
+  --ko-font-nn: "NanumSquare", "맑은고딕", sans-serif;
+  --ko-font-pr: "Pretendard Variable", "맑은고딕", sans-serif;
 }
+
 /***** header *****/
 header {
   color: #fff;
   background-color: transparent;
+  font-family: var(--en-font);
 }
 
 .header {
