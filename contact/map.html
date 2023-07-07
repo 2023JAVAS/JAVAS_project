@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>map</title>
+   <!----- reset ----->
+   <link rel="stylesheet" href="../common/style/reset.css">
+   <!----- fonts.css ----->
+   <link rel="stylesheet" href="../common/style/fonts.css">
+   <!----- 공통 css ----->
+   <link rel="stylesheet" href="../common/style/public.css">
+   <!----- 내가 쓴 css ----->
+   <link rel="stylesheet" href="./map.css">
+   <!-- jQuery -->
+   <script src="../common/js/jquery-3.7.0.min.js"></script>
+   <!-----  공통 js ----->
+   <script defer src="../common/js/public.js"></script>
+   <!-----  내가쓴 js ----->
+   <script defer src="./map.js"></script>
+</head>
+
+<body>
+   <!----- header ----->
+   <header>
+      <div class="header">
+         <!----- 예약버튼 ----->
+         <div class="reservation_btn">
+            <a href="#">+ RESERVATION</a>
+         </div>
+         <!----- 로고 ----->
+         <div class="logo">
+            <p><a href="#">BAY HILL</a></P>
+            <p><a href="#">POOL & VILLA</a></P>
+         </div>
+         <!----- 햄버거메뉴 ----->
+         <div class="hamburger_btn">
+            <label class="container">
+               <input type="checkbox" class="checkbox">
+               <div class="checkmark">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+            </label>
+         </div>
+      </div>
+
+      <ul class="menu">
+         <li><a href="#">ROOM</a></li>
+         <li><a href="#">DINING</a></li>
+         <li><a href="#">FACILITIES</a></li>
+         <li><a href="#">RESERVATION</a></li>
+         <li><a href="#">CONTACT</a></li>
+      </ul>
+   </header>
+
+
+   <main>
+      <div class="content">
+         <!----- 메인제목 ----->
+         <div class="main-title">
+            <h2>LOCATION</h2>
+            <p>63538 제주특별자치도 서귀포시 예래로 424 (하예동 1888)</p>
+         </div>
+
+         <!----- 카카오지도 ----->
+         <!----- 1. 지도 노드 ----->
+         <div id="daumRoughmapContainer1688708475210" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+         <!----- 2. 카카오지도 설치 스크립트 ----->
+         <script charset="UTF-8" class="daum_roughmap_loader_script"
+            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+         <!----- 3. 실행 스크립트 ----->
+         <script charset="UTF-8">
+            new daum.roughmap.Lander({
+               "timestamp": "1688708475210",
+               "key": "2fft7",
+               "mapWidth": "1600",
+               "mapHeight": "530"
+            }).render();
+         </script>
+      </div>
+
+      <div class="content">
+         <!----- 오시는길 ----->
+         <div class="map">
+            <div class="map-title">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -2 24 24" width="50" height="40">
+                  <path
+                     d="M4 2a2 2 0 0 0-2 2v5l12-.037V4a2 2 0 0 0-2-2H4zm7 15H5v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-2.535A3.998 3.998 0 0 1 0 13V4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v9c0 1.48-.804 2.773-2 3.465V19a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-2zm-7-3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm8 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM4 3a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1z">
+                  </path>
+               </svg>
+               <h2>오시는 길</h2>
+            </div>
+            <ul class="map-slide-menu">
+               <li>
+                  <h3>자가용 (렌터카)</h3>
+                  <p>베이힐풀앤빌라 주차장 이용 <br> 제주특별자치도 서귀포시 예래로 424 (하예동 1888)</p>
+               </li>
+
+               <li>
+                  <h3>버스</h3>
+                  <p><span class="bold">600번</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                     &nbsp; 제주국제공항
+                     공항리무진
+                     정류장에서 승차.
+                     예래입구
+                     정류장 하차
+                     <br> <span class="bold">531번, 633번</span> &nbsp; &nbsp;상예입구 정류장 승차. 하예하동 정류장 하차
+                     <br> <span class="small">* 소요시간 약 90분</span>
+                  </p>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </main>
+
+
+   <!----- footer ----->
+   <footer>
+      <div class="content">
+         <div class="footer">
+            <!----- footer logo ----->
+            <div class="footer_logo">
+               <p>BAYHILL<br>POOL & VILLA</p>
+            </div>
+            <!----- info ----->
+            <div class="footer_info">
+               <p>Tel. 064 - 801 - 9000</p>
+               <p>Fax. 064 - 801 - 9080</p>
+               <p>63538 제주특별자치도 서귀포시 예래로 424 (하예동 1888)</p>
+               <a href="https://github.com/2023JAVAS/JAVAS_project.git" target="_blank">JAVAS _ Project git 바로가기</a>
+            </div>
+         </div>
+         <!----- copyright ----->
+         <div class="copyright">
+            <p>Copyright © 2023 <span class="bold">JAVAS PROJECT</span> All rights reserved.</p>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>
