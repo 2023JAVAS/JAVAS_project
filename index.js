@@ -23,3 +23,13 @@ function scrollRotate() {
   // 문서가 현재 세로축을 따라 스크롤되는 픽셀수를 반환하는 Window.pageYOffset 속성을 적용 합니다.
   rombo.style.transform = 'translateX(' + window.pageYOffset / 3 + 'px)';
 }
+
+gsap.set('.scaleDown', { xPercent: -50, yPercent: -50 });
+gsap.to('.scaleDown', {
+  scale: 2,
+  scrollTrigger: {
+    trigger: '.main_animation',
+    pin: '.main_animation',
+    scrub: true,
+  },
+});
