@@ -11,10 +11,10 @@ body {
   color: #fff;
 }
 
+/***** 기존 공통 css 에서 색을 반대로 해야해서 색만 바꿧어용 *****/
 /***** header *****/
 header {
   color: #fff;
-  background-color: transparent;
 }
 
 .header {
@@ -27,6 +27,7 @@ header {
 /***** 메뉴 *****/
 .menu {
   background-color: #000;
+  color: #fff;
 }
 
 /***** menu hover 효과 *****/
@@ -76,6 +77,7 @@ header {
   background-color: rgb(255, 255, 255);
 }
 
+/***** main *****/
 .main {
   width: 80%;
   margin: 0 auto;
