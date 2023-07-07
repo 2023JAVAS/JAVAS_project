@@ -183,7 +183,7 @@ header {
   top: 35%;
   left: -32vw;
   width: 30vw;
-  height: 1px;
+  height: 0.0625rem;
   background-color: #fff;
 }
 
@@ -193,7 +193,7 @@ header {
   top: 35%;
   left: 110%;
   width: 32vw;
-  height: 1px;
+  height: 0.0625rem;
   background-color: #fff;
 }
 
@@ -222,7 +222,7 @@ header {
   display: block;
   position: relative;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 1.25rem;
   user-select: none;
 }
 
@@ -290,19 +290,6 @@ header {
 }
 
 /***** 메인 애니메이션 *****/
-.main_animation {
-  margin: 0 auto;
-  overflow: hidden;
-  width: 100%;
-  height: 80vh;
-  /* box-sizing: border-box; */
-  /* z-index: -999; */
-  /* background: url(./images/main_bayhill.jpg) no-repeat 50% / contain;
-  background-size: 55%; */
-  background-color: #000;
-
-  position: relative;
-}
 
 /**** 스크롤링 연습 아래****/
 /* .zoom {
@@ -330,15 +317,29 @@ img {
 
   transform-origin: 50% 50%;
 } */
-main_animation .ani-title {
+.main_animation {
+  overflow: hidden;
+  width: 100%;
+  height: 80vh;
+ 
+  box-sizing: border-box;
+  
+  background: url(./images/main_bayhill.jpg) no-repeat 50% / contain;
+  background-size: 55%;
+
+  position: relative;
+  background-color: #000;
+}
+
+.main_animation .ani-title {
   display: flex;
+
   align-items: center;
   white-space: nowrap;
+
   position: absolute;
   top: 50%;
   overflow: hidden;
-
-  transform-origin: 50% 50%;
 }
 .main_animation .ani-title .ani-title_flow {
   font-size: 6.25rem;
@@ -373,7 +374,7 @@ main_animation .ani-title {
 .room_category {
   width: 100%;
   height: 93vh;
-  margin: 0px auto;
+  margin: 0 auto;
   padding: 7vh0;
   background-color: #000;
 }
@@ -453,7 +454,6 @@ main_animation .ani-title {
   margin: 10vh auto;
   font-weight: 600;
 }
-
 .room_category_3img .category_txt:hover .txt_hidden ul li:first-child {
   font-size: 1.25rem;
 }
@@ -475,13 +475,10 @@ main_animation .ani-title {
   font-weight: 100;
 }
 .room_category_3img .category_txt:hover .txt_hidden ul li:nth-child(2) {
-<<<<<<< Updated upstream
-  content: "";
-=======
   font-weight: 600;
+
   content: '';
->>>>>>> Stashed changes
-  animation: flow 8s linear infinite;
+  animation: flow 13s linear infinite;
 }
 @keyframes flow {
   0% {
@@ -620,25 +617,21 @@ main_animation .ani-title {
   background-color: #eae8e1;
   padding-bottom: 50vh;
 }
-
 .sideimg_text img {
   display: inline-block;
 }
-
 .sideimg_text .sideimg_text_top {
   width: 100%;
   margin: 0 auto;
   height: 40vh;
   position: relative;
 }
-
 .sideimg_text .sideimg_text_top img:nth-child(1) {
   transform: translate(10vw, 10vw);
   position: relative;
   width: 25vw;
   z-index: 999;
 }
-
 .sideimg_text .line .first {
   content: "";
   position: absolute;
@@ -649,14 +642,12 @@ main_animation .ani-title {
   height: 40vw;
   display: block;
 }
-
 .sideimg_text .sideimg_text_top img:nth-child(2) {
   transform: translate(45vw, 15vw);
   width: 20vw;
   position: relative;
   z-index: 999;
 }
-
 .sideimg_text .line .two {
   content: "";
   position: absolute;
@@ -667,21 +658,18 @@ main_animation .ani-title {
   height: 60vw;
   display: block;
 }
-
 .sideimg_text .sideimg_text_top {
   width: 100%;
   margin: 0 auto;
   height: 40vh;
   position: relative;
 }
-
 .sideimg_text .sideimg_text_bottom img:nth-child(1) {
   transform: translate(10vw, 10vw);
   position: relative;
   width: 20vw;
   z-index: 999;
 }
-
 .sideimg_text .line2 .first {
   content: "";
   position: absolute;
@@ -692,14 +680,12 @@ main_animation .ani-title {
   height: 32vw;
   display: block;
 }
-
 .sideimg_text .sideimg_text_bottom img:nth-child(2) {
   transform: translate(45vw, 15vw);
   width: 28vw;
   position: relative;
   z-index: 999;
 }
-
 .sideimg_text .line2 .two {
   content: "";
   position: absolute;
@@ -716,7 +702,6 @@ main_animation .ani-title {
   height: 40vh;
   position: relative;
 }
-
 .sideimg_text .sideimg_quote {
   padding: 45vh 0 0 0;
   color: #333;
@@ -729,7 +714,6 @@ main_animation .ani-title {
   font-family: var(--ko-font-pr);
   line-height: 1.4;
 }
-
 .sideimg_text .sideimg_quote svg {
   width: 5vw;
   height: 4vw;
@@ -738,74 +722,7 @@ main_animation .ani-title {
   left: 30vw;
   bottom: 7vw;
 }
-/* .sideimg_text {
-  width: 100%;
-  background-color: #eae8e1;
-}
-.sideimg_text .sideimg_text_top {
-  width: 95%;
-  height: 80vh;
-  position: relative;
-}
-.sideimg_text .sideimg_text_top img:nth-child(1) {
-  width: 26.5vw;
-  height: 16.5vw;
-  position: absolute;
-  top: 15%;
-  left: 21%;
-}
-.sideimg_text .sideimg_text_top img:nth-child(2) {
-  width: 22vw;
-  height: 24vw;
-  position: absolute;
-  top: 37%;
-  right: 2%;
-  margin-bottom: 10vh;
-}
-.sideimg_text .sideimg_quote {
-  padding-top: 18vh;
-  color: #333;
-  font-family: var(--ko-font-nn);
-  font-size: 2.25rem;
-  text-align: center;
-  position: relative;
-}
-.sideimg_text .sideimg_quote p {
-  font-family: var(--ko-font-pr);
-  line-height: 1.4;
-  position: absolute;
-  top: 12.5vh;
-  left: 33.5vw;
-  z-index: 3;
-}
 
-/** svg큰따옴표 z-index가 안먹음..
-.sideimg_text .sideimg_quote svg {
-  width: 106px;
-  height: 87px;
-  opacity: 0.5;
-  position: absolute;
-  left: 30%;
-  top: 35%;
-  z-index: 2;
-}
-.sideimg_text .sideimg_text_bottom {
-  height: 100vh;
-  position: relative;
-}
-.sideimg_text .sideimg_text_bottom img:nth-child(1) {
-  width: 18vw;
-  height: 24vw;
-  position: absolute;
-  top: 15%;
-  left: 10%;
-}
-.sideimg_text .sideimg_text_bottom img:nth-child(2) {
-  width: 608px;
-  position: absolute;
-  top: 50%;
-  right: 10%;
-} */
 
 /***** footer *****/
 footer {
@@ -822,7 +739,6 @@ footer {
 footer .footer_info {
   z-index: 2;
 }
-
 .footer {
   display: flex;
   justify-content: space-around;
@@ -843,7 +759,6 @@ footer .footer_info {
   font-size: 0.917vw;
   line-height: 3;
 }
-
 .footer_info a:last-child {
   transition: 0.6s;
   font-weight: 500;
@@ -851,7 +766,6 @@ footer .footer_info {
   cursor: pointer;
   padding-left: 2px;
 }
-
 .footer_info a:last-child:hover {
   background-color: #fff;
   color: #000;
@@ -866,15 +780,12 @@ footer .copyright {
   font-size: 0.833vw;
   text-transform: none;
 }
-
 footer .copyright .bold {
   font-weight: 500;
 }
-
 footer .copyright {
   border-top: 1px solid #fff;
 }
-
 footer .copyright p {
   padding: 2vw 12vw;
 }
