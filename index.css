@@ -1,9 +1,9 @@
 @charset "utf-8";
 
 :root {
-  --en-font: "Gotham", serif;
-  --ko-font-pr: "Pretendard Variable", "맑은고딕", sans-serif;
-  --ko-font-nn: "NanumSquare", "맑은고딕", sans-serif;
+  --en-font: 'Gotham', serif;
+  --ko-font-pr: 'Pretendard Variable', '맑은고딕', sans-serif;
+  --ko-font-nn: 'NanumSquare', '맑은고딕', sans-serif;
 }
 body {
   background-color: #000;
@@ -47,7 +47,7 @@ header {
 
 /***** menu hover 효과 *****/
 .menu li:nth-child(1) a:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -65,7 +65,7 @@ header {
 }
 
 .menu li:nth-child(2) a:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -82,7 +82,7 @@ header {
 }
 
 .menu li:nth-child(3) a:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -99,7 +99,7 @@ header {
 }
 
 .menu li:nth-child(4) a:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -116,7 +116,7 @@ header {
 }
 
 .menu li:nth-child(5) a:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -168,7 +168,7 @@ header {
 }
 
 .logo::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 35%;
   left: -32vw;
@@ -178,7 +178,7 @@ header {
 }
 
 .logo::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 35%;
   left: 110%;
@@ -416,7 +416,7 @@ header {
   position: relative;
 }
 .room_category_3img .category_txt:hover .txt_hidden ul li:last-child::before {
-  content: "";
+  content: '';
   border: 1px solid #fff;
   display: block;
   width: 3vw;
@@ -425,7 +425,7 @@ header {
   right: 10vh;
 }
 .room_category_3img .category_txt:hover .txt_hidden ul li:nth-child(2) {
-  content: "";
+  content: '';
   animation: flow 8s linear infinite;
   font-weight: 400;
 }
@@ -510,11 +510,11 @@ header {
   overflow: hidden;
   /** 230706 좌우 롤링 수정 후 가로스크롤 생겨 수정 반영함 **/
 }
-/***** 230706 좌우롤링을 위해 작성 아래*****/
+/***** 230707 좌우롤링을 위해 작성 아래*****/
 .ani_text .ani_bottom {
-  margin-left: -250px;
+  margin-left: -1000px;
 }
-/***** 230706 좌우롤링을 위해 작성 위*****/
+/***** 230707 좌우롤링을 위해 작성 위*****/
 
 /***** 양쪽으로 2장씩 사진 4개와 가운데 텍스트  *****/
 .sideimg_text {
