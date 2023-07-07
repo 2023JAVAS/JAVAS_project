@@ -2,7 +2,7 @@
 header {
   background: url(./images/예약페이지.jpg) no-repeat 50% / cover;
   width: 100%;
-  height: 30rem;
+  /* height: 30rem; */
   z-index: -99;
 }
 /***** reservation_text *****/
@@ -33,7 +33,7 @@ header .choose_room_rate {
   background-color: #ffffff86;
   height: 150px;
   padding: 0 150px;
-  /* z-index: 99; */
+  z-index: -9;
 }
 header .choose_room_rate .room {
   display: grid;
@@ -107,6 +107,7 @@ header .choose_room_rate .button {
     Dotum, 굴림, Gulim, 'Apple SD Gothic Neo', sans-serif;
   font-weight: 400;
   margin-top: 50px;
+  cursor: pointer;
 }
 header .choose_room_rate .button:hover {
   background-color: #fff;
@@ -270,6 +271,7 @@ input {
 .guest_room img {
   margin-right: 108px;
   width: 25%;
+  z-index: -9;
 }
 
 /***** 객실 공통 *****/
@@ -280,6 +282,7 @@ input {
   flex-direction: column;
   margin: 40px 0 0 300px;
   position: relative;
+  z-index: -9;
 }
 .guest_room .money p {
   font-size: clamp(1.125rem, -1.7356rem + 3.2692vw, 2.1875rem);
@@ -324,6 +327,7 @@ input {
 }
 .guest_room .all_room .money a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .guest_room .all_room .txi {

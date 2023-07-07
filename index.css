@@ -290,6 +290,23 @@ header {
   background: url(./images/main_bayhill.jpg) no-repeat 50% / contain;
   background-size: 55%;
 }
+/**** 스크롤링 연습 아래****/
+/* .zoom {
+  width: 100%;
+  height: 110vh;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+img {
+  width: 20%;
+  height: 20%;
+} */
+
+/**** 스크롤링 연습 위 ****/
+
 .main_animation .ani-title {
   display: flex;
 
