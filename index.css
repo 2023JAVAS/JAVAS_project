@@ -658,7 +658,7 @@ header {
   top: -18vw;
   left: 22vw;
   background-color: #4e4e4e;
-  width: 1px;
+  width: 0.5px;
   height: 40vw;
   display: block;
 }
