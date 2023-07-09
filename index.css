@@ -655,7 +655,7 @@ header {
 .sideimg_text .line .first {
   content: "";
   position: absolute;
-  top: 5vw;
+  top: -18vw;
   left: 22vw;
   background-color: #4e4e4e;
   width: 1px;
@@ -670,7 +670,19 @@ header {
   z-index: 999;
 }
 
-.sideimg_text .line .obj {
+.sideimg_text .line .two {
+  content: "";
+  position: absolute;
+  top: -15vw;
+  left: 80vw;
+  background-color: #4e4e4e;
+  width: 1px;
+  height: 40vw;
+  display: block;
+}
+
+
+/* .sideimg_text .line .obj {
   position: absolute;
   
   top: -3vw;
@@ -679,7 +691,7 @@ header {
   width: 1px;
   height: 60vw;
   display: block;
-}
+} */
 /* .obj {
   position: fixed;
   top: 20%;
@@ -707,7 +719,7 @@ header {
 .sideimg_text .line2 .first {
   content: "";
   position: absolute;
-  top: 5vw;
+  top: -17vw;
   left: 24vw;
   background-color: #4e4e4e;
   width: 1px;
@@ -725,11 +737,11 @@ header {
 .sideimg_text .line2 .two {
   content: "";
   position: absolute;
-  top: 10vw;
+  top: -14vw;
   left: 70vw;
   background-color: #4e4e4e;
   width: 1px;
-  height: 30vw;
+  height: 31vw;
   display: block;
 }
 
