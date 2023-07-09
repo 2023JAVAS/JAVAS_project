@@ -306,9 +306,7 @@ header {
   overflow: hidden;
   width: 100%;
   height: 80vh;
- 
   box-sizing: border-box;
-  
   background-size: 55%;
   height: 100vh;
   position: relative;
@@ -317,18 +315,16 @@ header {
 
 .main_animation .ani-title {
   display: flex;
-
   align-items: center;
   white-space: nowrap;
-
   position: absolute;
   top: 50%;
   overflow: hidden;
 }
+
 .main_animation .ani-title .ani-title_flow {
   font-size: 6.25rem;
   font-weight: 200;
-
   z-index: 1;
 }
 .ani-title_flow {
@@ -348,14 +344,16 @@ header {
 /***** 메인 애니메이션 밑에 room으로 연결되는 화살표  *****/
 .arrow {
   width: 100%;
-  margin: 0 auto;
+  margin: 0vh auto;
   text-align: center;
   background-color: #000;
   padding-bottom: 2vh;
+  /* position: absolute;
+  bottom: 3vh; */
 }
 
 /***** 이미지+텍스트 박스 3개  *****/
-.room{
+.room {
   width: 100%;
   height: 100vh;
   margin: 0 auto;
@@ -366,7 +364,7 @@ header {
   padding-top: 2vw;
 }
 
-.room h1{
+.room h1 {
   text-align: center;
   font-size: 3.125rem;
   font-weight: 700;
@@ -374,7 +372,7 @@ header {
   border-bottom: 1px solid #fff;
 }
 
-.room .img_sesction{
+.room .img_sesction {
   margin: 0 auto;
   text-align: center;
   display: flex;
@@ -384,7 +382,7 @@ header {
   box-sizing: border-box;
 }
 
-.room .img_sesction .box{
+.room .img_sesction .box {
   margin: 0 2vh;
   width: 36.188rem;
   height: 35.313rem;
@@ -398,65 +396,65 @@ header {
   /** 230706 애니메이션 텍스트 사진 넘치는 부분 수정함 **/
 }
 
-.room .img_sesction .box h2{
+.room .img_sesction .box h2 {
   font-size: 2.375rem;
   font-weight: 700;
 }
 
-.room .img_sesction .txt_hover{
+.room .img_sesction .txt_hover {
   display: none;
 }
 
-.room .img_sesction .box_left{
+.room .img_sesction .box_left {
   background: url(./images/room_category_1.jpg) no-repeat 50% / cover,
     rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
 }
 
-.room .img_sesction .box_middle{
+.room .img_sesction .box_middle {
   background: url(./images/room_category_2.jpg) no-repeat 50% / cover
     rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
 }
 
-.room .img_sesction .box_right{
+.room .img_sesction .box_right {
   background: url(./images/room_category_3.jpg) no-repeat 50% / cover,
-  rgba(0, 0, 0, 0.5);
+    rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
 }
 
 /***** hover시 나타나는 텍스트 *****/
-.room .img_sesction .box:hover{
+.room .img_sesction .box:hover {
   transition: 0.6s;
-  width: 50rem;  
+  width: 50rem;
   filter: brightness(160%);
 }
 
-.room .img_sesction .box:hover h2{
+.room .img_sesction .box:hover h2 {
   display: none;
 }
 
-.room .img_sesction .box:hover .txt_hover{
+.room .img_sesction .box:hover .txt_hover {
   display: grid;
   white-space: nowrap;
 }
 
-.room .img_sesction .box:hover .txt_hover li{
+.room .img_sesction .box:hover .txt_hover li {
   margin: 10vh auto;
 }
 
-.room .img_sesction .box:hover .txt_hover li:first-child{
+.room .img_sesction .box:hover .txt_hover li:first-child {
   font-size: 1.25rem;
   font-weight: 600;
 }
 
-.room .img_sesction .box:hover .txt_hover li:last-child{
+.room .img_sesction .box:hover .txt_hover li:last-child {
   font-size: 0.875rem;
   font-weight: 300;
   position: relative;
 }
 
-.room .img_sesction .box:hover .txt_hover li:last-child::before{
+.room .img_sesction .box:hover .txt_hover li:last-child::before {
   content: "";
   border: 1px solid #fff;
   display: block;
@@ -466,19 +464,19 @@ header {
   right: 10vh;
 }
 
-.room .img_sesction .box:hover .txt_hover .animation_txt .flow{
+.room .img_sesction .box:hover .txt_hover .animation_txt .flow {
   margin-right: 1vw;
 }
 
-.room .img_sesction .box:hover .txt_hover .animation_txt .bold{
+.room .img_sesction .box:hover .txt_hover .animation_txt .bold {
   font-weight: 200;
 }
 
-.room .img_sesction .box:hover .txt_hover .animation_txt{
+.room .img_sesction .box:hover .txt_hover .animation_txt {
   display: flex;
   font-weight: 600;
 
-  content: '';
+  content: "";
   animation: flow 13s linear infinite;
 }
 @keyframes flow {
@@ -540,6 +538,8 @@ header {
 .welcome .welcome_section .welcome_btn {
   font-family: var(--ko-font-pr);
   width: 8.35vw;
+  text-transform: capitalize;
+  letter-spacing: 1px;
 }
 
 .welcome .welcome_section .welcome_btn span {
@@ -681,7 +681,6 @@ header {
   display: block;
 }
 
-
 /* .sideimg_text .line .obj {
   position: absolute;
   
@@ -753,7 +752,7 @@ header {
 }
 
 /***** 큰따옴표와 텍스트 *****/
-.sideimg_text .sideimg_quote{
+.sideimg_text .sideimg_quote {
   margin: 15vh auto;
   margin-bottom: 7vh;
   text-align: center;
@@ -769,7 +768,7 @@ header {
   line-height: 1.4;
 }
 
-.sideimg_quote svg{
+.sideimg_quote svg {
   width: 5vw;
   height: 4vw;
   position: absolute;
@@ -822,6 +821,7 @@ footer .footer_info {
   width: 11.5vw;
   cursor: pointer;
   padding-left: 2px;
+  text-transform: capitalize;
 }
 
 .footer_info a:last-child:hover {
