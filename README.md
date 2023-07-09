@@ -33,3 +33,6 @@
 - index 페이지 틀어진 부분 수정 완료 -이수민
 - map 페이지 퍼블리싱 완료. kakaomap 삽입 및 slideToggle로 버스, 지하철 안내문을 완성함 -이예지-
 - index 페이지 div class = "room"부분 조금 더 보기 편하게 코드 및 css도 재퍼블리싱 완료 -이수민 
+
+### 230708 ###
+- 메인 사진 zoom in 완료 -최건- 

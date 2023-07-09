@@ -23,6 +23,10 @@
 
     <!----- jQuery ----->
     <script src="./common/js/jquery-3.7.0.min.js"></script>
+    <!-- 외부 js -->
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
 
     <!-- swiper js -->
     <script src="./common/js/swiper-bundle.min.js"></script>
@@ -68,9 +72,9 @@
     <!----- 메인 애니메이션 ----->
     <div class="main_animation">
         <!----- 스크롤 줌 아래 ----->
-        <!-- <div class="zoom">
-            <img src="./images/main_bayhill.jpg" alt="">
-        </div> -->
+        <div class="container">
+            <div class="scaleDown"></div>
+          </div>
         <!----- 스크롤 줌 위 ----->
 
         <div class="ani-title">
@@ -211,7 +215,11 @@
             <img src="./images/sideimg_4.png" alt="왼쪽 탁자 모서리엔 향초가 여러개 켜져있고 오른쪽엔 빈 베개가 놓여져있음">
             <div class="line">
                 <span class="first"></span>
-                <span class="two"></span>
+                <span class="two">
+                    <svg class="obj">
+                    <path d="M150 0 L150 500 " fill="none" stroke="#4e4e4e" stroke-width="4" />
+                  </svg>
+                </span>
             </div>
         </div>
 
