@@ -53,3 +53,5 @@ gsap.to(".scaleDown", {scale: 2, scrollTrigger: {
 //     }
 
 //     addEventListener('scroll', scrolled);
+
+AOS.init();
