@@ -53,8 +53,7 @@ header {
 
 /***** 예약버튼 *****/
 .reservation_btn:hover {
-  background-color: #b4b4b43a;
-  border-radius: 5px;
+  transform: translateY(-7px);
 }
 
 .logo::before {
