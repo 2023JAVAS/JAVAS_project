@@ -40,8 +40,8 @@ body {
 /*****  오시는길 *****/
 .accordion_title {
   display: flex;
-  align-items: center;
-  margin-bottom: 10vh;
+  align-items: top;
+  margin-bottom: 20vh;
 }
 
 .accordion_title svg {
@@ -50,21 +50,22 @@ body {
 }
 
 .accordion_title h3 {
-  font-size: 1.6vw;
+  font-size: 1.7vw;
   font-weight: 600;
 }
 
 /* 오시는길 아코디언 메뉴 */
-
+.accordion_menu {
+  margin-top: -5vh;
+}
 /***** 자가용, 버스  *****/
 .accordion_menu li {
-  margin: 5vh 0;
   font-size: 1.2vw;
   font-weight: 500;
   letter-spacing: 1px;
   line-height: 1.5;
   border-bottom: 1px solid #000;
-  padding: 2.5vh 0 8vh 0;
+  padding: 2vh 0 8vh 0;
   position: relative;
 }
 
@@ -76,7 +77,7 @@ body {
 }
 
 .accordion_menu li:last-child {
-  padding: 2.5vh 0 10vh 0;
+  padding: 2vh 0 5vh 0;
 }
 
 /***** img toggleClass *****/
