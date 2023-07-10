@@ -3,7 +3,6 @@ $(".accordion_menu").on("click", (e) => {
   const target = $(e.target);
   target.next("p").slideToggle();
   target.next(".bus").css({ display: "flex" });
-  target.parent().siblings().find("p").slideUp();
 });
 
 // 화살표 toggle
