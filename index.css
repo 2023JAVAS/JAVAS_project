@@ -622,7 +622,10 @@ header {
 
 /***** 230707 좌우롤링을 위해 작성 아래*****/
 .ani_text .ani_bottom {
-  margin-left: -1000px;
+  margin-left: -1500px;
+}
+.ani_text strong {
+  margin: 0 50px;
 }
 
 /***** 230707 좌우롤링을 위해 작성 위*****/

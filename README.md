@@ -1,7 +1,7 @@
 # JAVAS_project
->**팀프로젝트 웹디자인**
->**래퍼런스사이트** :  https://theromeocollection.com/en/
->**리디자인사이트** : http://www.bayhill.co.kr/
+- **팀프로젝트 웹디자인**
+- **래퍼런스사이트** :  https://theromeocollection.com/en/
+- **리디자인사이트** : http://www.bayhill.co.kr/
 
 ### 230630 ###
 - 팀결성 및 래퍼런스, 리디자인사이트 선정
@@ -39,5 +39,5 @@
 - index 페이지 side 이미지 뒤에 선 내려오는 애니메이션 구현 -이지은-
 
 ### 230709 ###
--상세페이지 링크 연결 -이예지-
--reservation 페이지 간격 수정 -최건-
+- 상세페이지 링크 연결 -이예지-
+- reservation 페이지 간격 수정 -최건-
