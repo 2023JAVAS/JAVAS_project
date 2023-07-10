@@ -9,6 +9,29 @@
 ::-webkit-scrollbar {
   display: none;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+/***** 위로가기 버튼****/
+.top_btn {
+  width: 45px;
+  height: 45px;
+  background-color: #b3b3b383;
+  text-align: center;
+  line-height: 52px;
+  border-radius: 50%;
+  position: fixed;
+  right: 2vw;
+  bottom: 2vw;
+  z-index: 1111;
+  transition: 0.5s;
+}
+
+.top_btn:hover {
+  background-color: #b3b3b3;
+  transform: translateY(-1vh);
+}
 
 /***** header *****/
 header {
