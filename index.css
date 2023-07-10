@@ -1,22 +1,49 @@
 @charset "utf-8";
 
 :root {
-  --en-font: 'Gotham', serif;
-  --ko-font-pr: 'Pretendard Variable', '맑은고딕', sans-serif;
-  --ko-font-nn: 'NanumSquare', '맑은고딕', sans-serif;
+  --en-font: "Gotham", serif;
+  --ko-font-pr: "Pretendard Variable", "맑은고딕", sans-serif;
+  --ko-font-nn: "NanumSquare", "맑은고딕", sans-serif;
 }
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background-color: #000;
   text-transform: uppercase;
   color: #fff;
   font-family: var(--en-font);
 }
+
 body > div {
   position: relative;
   z-index: 5;
+}
+
+/***** 스크롤****/
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/***** 위로가기 버튼****/
+.top_btn {
+  width: 45px;
+  height: 45px;
+  background-color: #b3b3b383;
+  text-align: center;
+  line-height: 52px;
+  border-radius: 50%;
+  position: fixed;
+  right: 2vw;
+  bottom: 2vw;
+  z-index: 1111;
+  transition: 0.5s;
+}
+
+.top_btn:hover {
+  background-color: #b3b3b3;
+  transform: translateY(-1vh);
 }
 
 /***** header *****/
@@ -57,7 +84,7 @@ header {
 
 /***** menu hover 효과 *****/
 .menu li:nth-child(1) a:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -75,7 +102,7 @@ header {
 }
 
 .menu li:nth-child(2) a:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -92,7 +119,7 @@ header {
 }
 
 .menu li:nth-child(3) a:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -109,7 +136,7 @@ header {
 }
 
 .menu li:nth-child(4) a:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -126,7 +153,7 @@ header {
 }
 
 .menu li:nth-child(5) a:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -155,8 +182,7 @@ header {
 }
 
 .reservation_btn:hover {
-  background-color: #b4b4b43a;
-  border-radius: 5px;
+  transform: translateY(-7px);
 }
 
 /***** 로고 *****/
@@ -178,7 +204,7 @@ header {
 }
 
 .logo::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 35%;
   left: -32vw;
@@ -188,7 +214,7 @@ header {
 }
 
 .logo::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 35%;
   left: 110%;
@@ -429,7 +455,7 @@ header {
 /***** hover시 나타나는 텍스트 *****/
 .room .img_sesction .box:hover {
   transition: 0.6s;
-  width: 50rem;
+  width: 60rem;
   filter: brightness(160%);
 }
 
@@ -458,7 +484,7 @@ header {
 }
 
 .room .img_sesction .box:hover .txt_hover li:last-child::before {
-  content: '';
+  content: "";
   border: 1px solid #fff;
   display: block;
   width: 3vw;
@@ -479,7 +505,7 @@ header {
   display: flex;
   font-weight: 600;
 
-  content: '';
+  content: "";
   animation: flow 13s linear infinite;
 }
 @keyframes flow {
@@ -575,7 +601,7 @@ header {
 
 .welcome .welcome_section .welcome_btn span:before,
 .welcome .welcome_section .welcome_btn span:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -658,7 +684,7 @@ header {
 }
 
 .sideimg_text .line .first {
-  content: '';
+  content: "";
   position: absolute;
   top: -18vw;
   left: 22vw;
@@ -676,7 +702,7 @@ header {
 }
 
 .sideimg_text .line .two {
-  content: '';
+  content: "";
   position: absolute;
   top: -15vw;
   left: 80vw;
@@ -721,7 +747,7 @@ header {
 }
 
 .sideimg_text .line2 .first {
-  content: '';
+  content: "";
   position: absolute;
   top: -17vw;
   left: 24vw;
@@ -739,7 +765,7 @@ header {
 }
 
 .sideimg_text .line2 .two {
-  content: '';
+  content: "";
   position: absolute;
   top: -14vw;
   left: 70vw;
@@ -830,10 +856,7 @@ footer .footer_info {
 }
 
 .footer_info a:last-child:hover {
-  background-color: #fff;
-  color: #000;
-  padding: 0.5vw;
-  font-weight: 500;
+  text-decoration: underline;
 }
 
 /***** copyright *****/
