@@ -2,7 +2,7 @@
 - **팀프로젝트 웹디자인**
 - **리디자인사이트** : <a href="http://www.bayhill.co.kr/" target="_blank"> http://www.bayhill.co.kr/ </a>
 - ****베이힐 풀앤빌라 사이트 리디자인 프로젝트 입니다.****
-- **퍼블리싱 가이드** : <a href="https://2023javas.github.io/JAVAS_project/javasproject_guid.pdf" target="_blank"> https://2023javas.github.io/JAVAS_project/javasproject_guid.pdf/ </a>
+- **퍼블리싱 가이드** : <https://2023javas.github.io/JAVAS_project/javasproject_guid.pdf>
 
 ### 230630 ###
 - 팀결성 및 래퍼런스, 리디자인사이트 선정
