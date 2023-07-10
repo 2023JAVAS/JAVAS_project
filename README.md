@@ -1,7 +1,7 @@
 # JAVAS_project
->**팀프로젝트 웹디자인**
->**래퍼런스사이트** :  https://theromeocollection.com/en/
->**리디자인사이트** : http://www.bayhill.co.kr/
+- **팀프로젝트 웹디자인**
+- **래퍼런스사이트** :  https://theromeocollection.com/en/
+- **리디자인사이트** : http://www.bayhill.co.kr/
 
 ### 230630 ###
 - 팀결성 및 래퍼런스, 리디자인사이트 선정
