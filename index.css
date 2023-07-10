@@ -321,7 +321,7 @@ header {
   align-items: center;
   white-space: nowrap;
   position: absolute;
-  top: 50%;
+  top: 40%;
   overflow: hidden;
 }
 
@@ -349,10 +349,10 @@ header {
   width: 100%;
   margin: 0vh auto;
   text-align: center;
-  background-color: #000;
+  /* background-color: #000; */
   padding-bottom: 2vh;
-  /* position: absolute;
-  bottom: 3vh; */
+  position: absolute;
+  bottom: 3vh;
 }
 
 /***** 이미지+텍스트 박스 3개  *****/
