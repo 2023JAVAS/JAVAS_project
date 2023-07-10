@@ -25,33 +25,14 @@ function scrollRotate() {
 }
 
 //스크롤시 이미지 크게 보이기
-gsap.set(".scaleDown", {xPercent: -50, yPercent: -50});
-gsap.to(".scaleDown", {scale: 2, scrollTrigger: {
-  trigger: ".main_animation",
-  pin: ".main_animation",
-  scrub: true
-}});
+gsap.set('.scaleDown', { xPercent: -50, yPercent: -50 });
+gsap.to('.scaleDown', {
+  scale: 2,
+  scrollTrigger: {
+    trigger: '.main_animation',
+    pin: '.main_animation',
+    scrub: true,
+  },
+});
 
 // 스크롤시 선이 그어짐
-// const objPath = document.querySelector('.obj path');
-//     const path = objPath.getTotalLength();
-//     console.log(path);
-
-//     objPath.style.strokeDasharray = path;
-//     objPath.style.strokeDashoffset = path;
-
-//     const scrolled = () => {
-//       const windScrollTop = document.documentElement.scrollTop;
-//       const scrollHt = document.documentElement.scrollHeight;
-//       const clientHt = document.documentElement.clientHeight;
-
-//       let total = windScrollTop / (scrollHt - clientHt);
-
-//       const action = path * total;
-
-//       objPath.style.strokeDashoffset = path - action;
-//     }
-
-//     addEventListener('scroll', scrolled);
-
-AOS.init();
