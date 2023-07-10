@@ -1,9 +1,9 @@
 @charset "utf-8";
 
 :root {
-  --en-font: "Gotham", serif;
-  --ko-font-pr: "Pretendard Variable", "맑은고딕", sans-serif;
-  --ko-font-nn: "NanumSquare", "맑은고딕", sans-serif;
+  --en-font: 'Gotham', serif;
+  --ko-font-pr: 'Pretendard Variable', '맑은고딕', sans-serif;
+  --ko-font-nn: 'NanumSquare', '맑은고딕', sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -57,7 +57,7 @@ header {
 
 /***** menu hover 효과 *****/
 .menu li:nth-child(1) a:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -75,7 +75,7 @@ header {
 }
 
 .menu li:nth-child(2) a:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -92,7 +92,7 @@ header {
 }
 
 .menu li:nth-child(3) a:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -109,7 +109,7 @@ header {
 }
 
 .menu li:nth-child(4) a:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -126,7 +126,7 @@ header {
 }
 
 .menu li:nth-child(5) a:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -178,7 +178,7 @@ header {
 }
 
 .logo::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 35%;
   left: -32vw;
@@ -188,7 +188,7 @@ header {
 }
 
 .logo::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 35%;
   left: 110%;
@@ -292,15 +292,6 @@ header {
 /***** 메인 애니메이션 *****/
 
 /**** 스크롤링 연습 아래****/
-.scaleDown {
-  width: 50vw;
-  height: 50vh;
-  position: absolute;
-  top: 22vw;
-  left: 50%;
-  background: url(./images/main_bayhill.jpg) no-repeat 50% / contain;
-}
-/**** 스크롤링 연습 위 ****/
 
 .main_animation {
   overflow: hidden;
@@ -309,9 +300,21 @@ header {
   box-sizing: border-box;
   background-size: 55%;
   height: 100vh;
-  position: relative;
   background-color: #000;
+  position: relative;
 }
+.main_animation .scaleDown {
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  top: 22vw;
+  left: 50%;
+
+  background: url(./images/main_bayhill.jpg) no-repeat 50% / contain;
+  transform-origin: 50% 50%;
+}
+
+/**** 스크롤링 연습 위 ****/
 
 .main_animation .ani-title {
   display: flex;
@@ -455,7 +458,7 @@ header {
 }
 
 .room .img_sesction .box:hover .txt_hover li:last-child::before {
-  content: "";
+  content: '';
   border: 1px solid #fff;
   display: block;
   width: 3vw;
@@ -476,7 +479,7 @@ header {
   display: flex;
   font-weight: 600;
 
-  content: "";
+  content: '';
   animation: flow 13s linear infinite;
 }
 @keyframes flow {
@@ -572,7 +575,7 @@ header {
 
 .welcome .welcome_section .welcome_btn span:before,
 .welcome .welcome_section .welcome_btn span:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -627,7 +630,6 @@ header {
 .ani_text strong {
   margin: 0 50px;
 }
-
 /***** 230707 좌우롤링을 위해 작성 위*****/
 
 /***** 양쪽으로 2장씩 사진 4개와 가운데 텍스트  *****/
@@ -656,7 +658,7 @@ header {
 }
 
 .sideimg_text .line .first {
-  content: "";
+  content: '';
   position: absolute;
   top: -18vw;
   left: 22vw;
@@ -674,7 +676,7 @@ header {
 }
 
 .sideimg_text .line .two {
-  content: "";
+  content: '';
   position: absolute;
   top: -15vw;
   left: 80vw;
@@ -719,7 +721,7 @@ header {
 }
 
 .sideimg_text .line2 .first {
-  content: "";
+  content: '';
   position: absolute;
   top: -17vw;
   left: 24vw;
@@ -737,7 +739,7 @@ header {
 }
 
 .sideimg_text .line2 .two {
-  content: "";
+  content: '';
   position: absolute;
   top: -14vw;
   left: 70vw;
