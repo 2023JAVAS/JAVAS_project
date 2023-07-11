@@ -5,25 +5,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>reservation</title>
+
   <!----- reset ----->
   <link rel="stylesheet" href="../common/style/reset.css">
   <!-- favicon -->
+
   <link rel="shortcut icon" href="../common/favicon/favicon.ico" image="/x-icon">
+
   <!--fonts -->
   <link rel="stylesheet" href="../common/style/fonts.css">
+
   <!----- 공용 css ----->
   <link rel="stylesheet" href="../common/style/public.css">
+
   <!----- 내가 쓴 css ----->
   <link rel="stylesheet" href="./reservation.css">
+
   <!-- 공용 js -->
   <script defer src="../common/js/public.js"></script>
   <script src="../common/js/jquery-3.7.0.min.js"></script>
+
   <!----- 외부 js ----->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
   <!----- 내가 쓴 js ----->
   <script defer src="./reservation.js"></script>
 </head>
@@ -98,23 +106,46 @@
         </div>
       </li>
       <li class="checkin_out">
-        <strong>check in / out <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -3 24 24" width="24"
+        <strong id="button">check in / out <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -3 24 24" width="24"
             fill="currentColor">
             <path fill="orange"
               d="M17 2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3v2a2 2 0 1 0 4 0V2h1v2a2 2 0 1 0 4 0V2h1v2a2 2 0 1 0 4 0V2zM3 8v2h2V8H3zm0 4v2h2v-2H3zm12 0v2h2v-2h-2zm0-4v2h2V8h-2zM7 8v2h2V8H7zm4 0v2h2V8h-2zm0 4v2h2v-2h-2zm-4 0v2h2v-2H7zM5 0a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0V1a1 1 0 0 1 1-1zm10 0a1 1 0 0 1 1 1v3a1 1 0 0 1-2 0V1a1 1 0 0 1 1-1zm-5 0a1 1 0 0 1 1 1v3a1 1 0 0 1-2 0V1a1 1 0 0 1 1-1z">
             </path>
           </svg></strong>
-        <input type="text" name="daterange" value="" />
+        <!-- 달력 -->
+        <div class="calendar" style="display: none;">
+          <div class="header">
+            <button class="calendar_btn" onclick="prevCal();">&lt;</button>
+            <div class="title"><span class="year"></span><span class="month"></span></div>
+            <button class="calendar_btn" onclick="nextCal();">&gt;</button>
+          </div>
+          <div class="day">
+            <div>S</div>
+            <div>M</div>
+            <div>T</div>
+            <div>W</div>
+            <div>T</div>
+            <div>F</div>
+            <div>S</div>
+          </div>
+          <div class="dates"></div>
+        </div>
+        <div class="dayto">
+          <input type="text" id="period_1"> ~ <input type="text" id="period_2">
+        </div>
+        <!-- 달력 -->
       </li>
       <li class="room">
         <ul class="room_choose">
           <li class="room_number grid">
             <strong>room</strong>
             <span>
+              <!-- 숫자 증가 버튼 -->
               <div id="app">
                 <p>{{ count }}</p>
                 <button v-on:click="countUp">+</button>
                 <button v-on:click="countDown">-</button>
+                <!-- 숫자 증가 버튼 -->
               </div>
             </span>
           </li>
@@ -122,9 +153,11 @@
             <strong>adult</strong>
             <span>
               <div id="adult">
+                <!-- 숫자 증가 버튼 -->
                 <p>성인{{ count }}명</p>
                 <button v-on:click="countUp">+</button>
                 <button v-on:click="countDown">-</button>
+                <!-- 숫자 증가 버튼 -->
               </div>
             </span>
           </li>
@@ -132,9 +165,11 @@
             <strong>children</strong>
             <span>
               <div id="children">
+                <!-- 숫자 증가 버튼 -->
                 <p>어린이{{ count }}명</p>
                 <button v-on:click="countUp">+</button>
                 <button v-on:click="countDown">-</button>
+                <!-- 숫자 증가 버튼 -->
               </div>
             </span>
           </li>
