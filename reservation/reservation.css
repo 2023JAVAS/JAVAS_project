@@ -101,12 +101,17 @@ header .choose_room_rate .grid {
 header .choose_room_rate .grid span {
   margin: 20px 0 0 0;
 }
+header .choose_room_rate .grid p {
+  font-family: 'NanumSquare', '맑은 고딕', 'Malgun Gothic', 나눔고딕, 돋움,
+    Dotum, 굴림, Gulim, 'Apple SD Gothic Neo', sans-serif;
+}
 header .choose_room_rate .grid span button {
   background-color: #fff;
   border: none;
   width: 50px;
   font-size: 22px;
   margin-top: 10px;
+  border-radius: 50px;
 }
 header .choose_room_rate .button {
   padding: 15px 34.5px;
@@ -261,7 +266,7 @@ header .choose_room_rate .button:hover {
   border: none;
 }
 .calendar {
-  width: 50vw;
+  width: 30vw;
   padding: 5px 20px 20px 20px;
   margin: 100px -50px;
   box-sizing: border-box;
@@ -288,6 +293,7 @@ header .choose_room_rate .button:hover {
   background-color: #ffffff;
   vertical-align: middle;
   color: black;
+  font-size: 1.5vw;
 }
 
 .calendar > .day {
@@ -340,6 +346,11 @@ header .choose_room_rate .button:hover {
 
 .calendar > .dates > .next {
   color: #c8c8c8 !important;
+}
+.dates {
+  font-size: 1vw;
+  font-family: 'NanumSquare', '맑은 고딕', 'Malgun Gothic', 나눔고딕, 돋움,
+    Dotum, 굴림, Gulim, 'Apple SD Gothic Neo', sans-serif;
 }
 
 /***** 객실안내 *****/
