@@ -69,7 +69,7 @@ header .choose_room_rate .checkin_out svg {
   margin-left: 20px;
   margin-bottom: -2px;
 }
-header .choose_room_rate .checkin_out::after {
+/* header .choose_room_rate .checkin_out::after {
   content: '';
   border: 1px solid #000;
   height: 80px;
@@ -77,7 +77,7 @@ header .choose_room_rate .checkin_out::after {
   top: 50%;
   transform: translateY(-50%);
   left: 25vw;
-}
+} */
 /***** 방,인,어린이 수 *****/
 header .choose_room_rate .room_choose {
   display: flex;
@@ -259,16 +259,22 @@ header .choose_room_rate .button:hover {
 .dayto {
   display: flex;
   /* width: 100px; */
+  margin-top: 1.2vw;
+  font-family: 'NanumSquare', '맑은 고딕', 'Malgun Gothic', 나눔고딕, 돋움,
+    Dotum, 굴림, Gulim, 'Apple SD Gothic Neo', sans-serif;
 }
 .dayto input {
   margin: 0 10px;
   border-radius: 50px;
   border: none;
+  width: 9vw;
+  text-align: center;
+  height: 1.5vw;
 }
 .calendar {
   width: 30vw;
   padding: 5px 20px 20px 20px;
-  margin: 100px -50px;
+  margin: 0px -50px;
   box-sizing: border-box;
   border: 1px solid;
   cursor: pointer;
@@ -278,6 +284,7 @@ header .choose_room_rate .button:hover {
 
 .calendar > .header {
   text-align: center;
+  font-size: 1.2vw;
 }
 
 .calendar > .header > .title {
@@ -286,8 +293,8 @@ header .choose_room_rate .button:hover {
 }
 
 .calendar > .header > .calendar_btn {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   border: none;
   padding: 0;
   background-color: #ffffff;
@@ -376,6 +383,8 @@ header .choose_room_rate .button:hover {
 }
 .guest_room .flex {
   display: flex;
+  /* justify-content: center; */
+
   margin-bottom: 120px;
 }
 /***** 빌라이미지 *****/
@@ -391,7 +400,7 @@ header .choose_room_rate .button:hover {
   justify-content: flex-start;
   align-items: end;
   flex-direction: column;
-  margin: 40px 0 0 300px;
+  margin: 40px 0 0 21vw;
   position: relative;
   /* z-index: -9; */
 }
@@ -450,7 +459,7 @@ header .choose_room_rate .button:hover {
 }
 
 .guest_room .all_room .txi {
-  margin-left: 380px;
+  margin-left: 25vw;
 }
 .guest_room .all_room h1 {
   font-size: clamp(1.125rem, -1.7356rem + 3.2692vw, 2.1875rem);
@@ -470,7 +479,7 @@ header .choose_room_rate .button:hover {
   text-decoration: underline;
 }
 .guest_room .all_room .all_room_text {
-  margin-right: 250px;
+  margin-right: 7vw;
 }
 footer {
   background-color: #000;
