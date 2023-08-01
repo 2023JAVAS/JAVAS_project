@@ -540,18 +540,18 @@ header {
 }
 
 .welcome .welcome_section h1 {
-  font-size: 4.2rem;
+  font-size: 3.5vw;
   font-weight: 700;
   margin-top: 10vh;
 }
 
 .welcome .welcome_section h1 span {
-  font-size: 3.5rem;
+  font-size: 2.917vw;
 }
 
 .welcome .welcome_section h2 {
   font-family: var(--ko-font-pr);
-  font-size: 2.25rem;
+  font-size: 1.875vw;
   font-weight: 600;
   margin-top: 12vh;
   line-height: 1.4;
@@ -559,7 +559,7 @@ header {
 
 .welcome .welcome_section p {
   font-family: var(--ko-font-pr);
-  font-size: 1.5rem;
+  font-size: 1.25vw;
   margin-top: 3vh;
   line-height: 1.4;
 }
@@ -573,8 +573,8 @@ header {
 
 .welcome .welcome_section .welcome_btn span {
   margin-top: 6.5vh;
-  width: 10.438rem;
-  height: 2.938rem;
+  width: 8.698vw;
+  height: 2.448vw;
   text-align: center;
 }
 
@@ -582,7 +582,6 @@ header {
   background-color: #000;
   color: #fff;
   height: 3vw;
-
   line-height: 3vw;
   display: block;
   position: relative;
@@ -590,6 +589,7 @@ header {
 
 .welcome .welcome_section .welcome_btn a {
   display: block;
+  font-size: 1vw;
 }
 
 .welcome .welcome_section .welcome_btn span:hover {
@@ -628,12 +628,14 @@ header {
   position: absolute;
   top: 21%;
   right: 17%;
+  width: 26vw;
 }
 
 .welcome_section .welcome_section_img img:nth-child(2) {
   position: absolute;
-  top: 60%;
+  top: 30vw;
   right: 7%;
+  width: 26vw;
 }
 
 /***** 스크롤시 텍스트 좌우롤링 부분  *****/
@@ -643,7 +645,7 @@ header {
   background-color: #eae8e1;
   color: #000;
   /* font-size: 5.625rem; */
-  font-size: 6.8rem;
+  font-size: 5.667vw;
   padding-top: 17vh;
   overflow: hidden;
   /** 230706 좌우 롤링 수정 후 가로스크롤 생겨 수정함 **/
